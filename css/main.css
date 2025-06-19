@@ -1,0 +1,57 @@
+:root {
+  /* 컬러 */
+  --color-primary: #09d2d2;
+  --color-secondary: #c3e248;
+  --color-text: #ffffff;
+  --color-bg: #212121;
+  --color-gray-300: #bababa;
+  --color-gray-100: #e3e3e3;
+
+  /* 폰트 */
+  --font-family-base: 'Pretendard', Noto Sans KR, sans-serif;
+
+  /* 폰트 크기 */
+  --font-size-heading: 3.2rem;
+  --font-size-xl: 2.4rem;
+  --font-size-lg: 2rem;
+  --font-size-md: 1.8rem;
+  --font-size-sm: 1.6rem;
+
+  /* 폰트 굵기 */
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* 라인 높이 */
+  --line-height-base: 1.5;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+img {
+  vertical-align: middle;
+}
+
+.heading {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading);
+  text-align: center;
+}
