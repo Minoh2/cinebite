@@ -1,0 +1,228 @@
+body {
+  height: 8000px;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100vw; /* ✅ 전체 화면 너비 강제 적용 */
+  height: 8rem;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(33, 33, 33, 0.9) 0%,
+    rgba(33, 33, 33, 0.6) 50%,
+    rgba(33, 33, 33, 0) 100%
+  );
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-blend-mode: overlay;
+
+  color: var(--color-text);
+}
+
+.nav-wrapper {
+  height: 100%;
+  max-width: 100%;
+  margin: 0 16rem; /* ✅ 콘텐츠만 가운데로 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 좌측: 로고 + 메뉴 */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 7.2rem; /* 로고와 메뉴 간 간격 72px */
+}
+
+.logo img {
+  height: 3.2rem;
+  object-fit: contain;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem; /* 메뉴 항목 간 간격 32px */
+}
+
+.nav-links li a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: var(--color-primary);
+}
+
+/* 우측: 검색창 + 알림 + 프로필 + 닉네임 */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* 검색 박스 */
+.search-box {
+  background-color: transparent;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.8rem;
+  display: block;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 20rem;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 0.8rem 3.6rem;
+  font-size: var(--font-size-sm);
+  border: 1px solid var(--color-gray-300); /* ✅ 얇은 회색 라인 */
+  border-radius: 1rem;
+  background-color: transparent; /* ✅ 배경 제거 */
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-gray-300);
+  font-size: 1.4rem;
+  pointer-events: none;
+}
+
+.search-hint {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-gray-300);
+  font-size: var(--font-size-sm);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-wrapper input:focus + .search-hint,
+.search-wrapper input:not(:placeholder-shown) + .search-hint {
+  display: none;
+}
+
+.search-wrapper button[type='submit'] {
+  display: none;
+}
+
+/* 아이콘 버튼 공통 (🔔) */
+.nav-icons button {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* 프로필 이미지 */
+.profile img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 닉네임 */
+.nickname {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+/* ✅ 인사이드 아웃 전체 섹션 */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 8rem; /* nav-bar 높이 만큼 여백 줌 */
+  overflow: hidden;
+}
+
+/* ✅ 배경 이미지 */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 화면에 꽉 채우되 잘릴 수 있음 */
+  object-position: center top; /* 위쪽 기준으로 정렬 */
+  z-index: -1;
+}
+
+/* ✅ 인사이드 아웃 텍스트 이미지 */
+.hero-text {
+  position: absolute;
+  top: 25rem;
+  left: 0;
+  width: 100%;
+  padding: 0 16rem;
+}
+
+/* 인사이드 아웃 로고 */
+.hero-title {
+  max-width: 40rem;
+  height: auto;
+}
+
+/* ✅ 로고 아래 4rem 간격으로 붙는 정보 섹션 */
+.hero-sub {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* 텍스트와 로고 간격 */
+}
+
+/* 83분 텍스트 */
+.runtime {
+  font-size: 2.4rem; /* 24px */
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+/* 디즈니 로고 */
+.disney-logo {
+  height: 3.5rem;
+  object-fit: contain;
+}
+
+.cta-detail {
+  margin-left: auto; /* ✅ 오른쪽 끝으로 밀기 */
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  text-decoration: none;
+  transition: color 0.3s;
+  border: 1px solid #ffffff;
+  border-radius: 5rem;
+  padding: 1.3rem 3rem;
+}
+
+.cta-detail:hover {
+  color: var(--color-primary);
+}
