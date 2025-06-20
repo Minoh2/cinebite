@@ -8,7 +8,8 @@
   --color-gray-100: #e3e3e3;
 
   /* 폰트 */
-  --font-family-base: 'Pretendard', Noto Sans KR, sans-serif;
+  --font-family-base: 'Pretendard', 'Noto Sans KR', sans-serif;
+  --font-family-logo: 'Montserrat Alternates', sans-serif;
 
   /* 폰트 크기 */
   --font-size-heading: 3.2rem;
@@ -18,7 +19,7 @@
   --font-size-sm: 1.6rem;
 
   /* 폰트 굵기 */
-  --font-weight-medium: 500;
+  --font-weight-medium: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
