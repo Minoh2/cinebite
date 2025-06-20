@@ -173,10 +173,15 @@ body {
 /* ✅ 인사이드 아웃 텍스트 이미지 */
 .hero-text {
   position: absolute;
-  top: 25rem;
+  top: 14rem;
   left: 0;
   width: 100%;
   padding: 0 16rem;
+}
+
+.hero-text img {
+  max-width: 60rem; /* 원하는 크기로 조절 */
+  height: auto;
 }
 
 /* 인사이드 아웃 로고 */
@@ -196,13 +201,24 @@ body {
 .hero-meta {
   display: flex;
   align-items: center;
-  gap: 2rem; /* 텍스트와 로고 간격 */
+  gap: 1.2rem; /* 텍스트와 로고 간격 */
 }
 
-/* 83분 텍스트 */
-.runtime {
-  font-size: 2.4rem; /* 24px */
+.hero-meta img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.hero-meta .cc {
+  width: 7rem;
+  height: 5rem;
+}
+
+/* 2024 96분 텍스트 */
+.times {
+  font-size: 2rem; /* 20px */
   font-weight: var(--font-weight-medium);
+  margin-left: 2.4rem;
   color: var(--color-text);
 }
 
@@ -213,14 +229,15 @@ body {
 }
 
 .cta-detail {
-  margin-left: auto; /* ✅ 오른쪽 끝으로 밀기 */
   font-size: var(--font-size-sm);
-  color: var(--color-gray-300);
+  color: var(--color-text);
   text-decoration: none;
   transition: color 0.3s;
-  border: 1px solid #ffffff;
-  border-radius: 5rem;
+  border-radius: 1rem;
   padding: 1.3rem 3rem;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1); /* 배경 추가도 고려 가능 */
+  margin-top: 2rem;
 }
 
 .cta-detail:hover {
@@ -372,4 +389,103 @@ body {
   cursor: pointer;
   margin: 2rem auto 6rem;
   display: inline-block;
+  font-weight: var(--font-weight-semibold);
+  font-size: 2rem;
+}
+
+/* top 8 section */
+.top8-section {
+  padding: 4rem 16rem;
+  background-color: var(--color-bg);
+  margin-top: 6rem;
+}
+
+.top8-title {
+  font-size: 3.2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 2.4rem;
+  line-height: 1.5;
+}
+
+.top8-title .highlight {
+  color: var(--color-primary); /* TOP 8에만 강조 색상 */
+}
+
+.top8-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+/* 좌측 이미지 + 텍스트 */
+.top8-left {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-poster {
+  width: 24rem;
+  height: 44rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 26rem;
+  font-size: 1.4rem;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.main-meta,
+.main-runtime,
+.main-rating {
+  color: #555;
+}
+
+.main-description {
+  color: #444;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.platform-icons img {
+  width: 2.8rem;
+  margin-right: 0.8rem;
+}
+
+/* 썸네일 영역: 4 × 2 정렬 */
+.top8-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  grid-template-rows: repeat(2, 240px);
+  gap: 1.2rem;
+}
+
+.thumb {
+  width: 160px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  opacity: 0.4;
+  filter: brightness(50%);
+  transition: all 0.3s;
+}
+
+.thumb.active {
+  opacity: 1;
+  filter: none;
+  transform: scale(1.05);
+  border: 2px solid var(--color-primary);
 }
