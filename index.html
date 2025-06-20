@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
 </head>
 
@@ -18,7 +18,7 @@
         <!-- 좌측: 로고 + 메뉴 -->
         <div class="nav-left">
           <div class="logo">
-            <a href="#"><img src="/asset/image/home_image/logo.png" alt="logo" /></a>
+            <a href="#"><img src="asset/image/home_image/logo.png" alt="logo" /></a>
           </div>
           <ul class="nav-links">
             <li><a href="#">홈</a></li>
@@ -43,7 +43,7 @@
           <button class="notification-btn" aria-label="알림">🔔</button>
 
           <div class="profile">
-            <img src="/asset/image/home_image/bite123.png" alt="프로필 이미지" />
+            <img src="asset/image/home_image/bite123.png" alt="프로필 이미지" />
           </div>
 
           <span class="nickname">바이트123</span>
@@ -55,17 +55,19 @@
 
   <!-- ✅ 이어지는 인사이드 아웃 콘텐츠 -->
   <section class="hero">
-    <img src="/asset/image/home_image/insideout_bg.png" alt="인사이드 아웃 배경" class="hero-bg" />
+    <img src="asset/image/home_image/insideout_bg.png" alt="인사이드 아웃 배경" class="hero-bg" />
 
     <div class="hero-text">
       <img src="asset/image/home_image/insideout_logo.png" alt="인사이드 아웃 로고 텍스트" />
       <div class="hero-sub">
-        <div class="hero-meta"> <!-- ✅ 좌측 묶음 -->
-          <span class="runtime">83분</span>
-          <img src="asset/image/home_image/disney_logo.png" class="disney-logo" />
+        <div class="hero-meta">
+          <img src="asset/image/home_image/img_all.png" alt="">
+          <img src="asset/image/home_image/img_cc.png" class="cc" alt="" />
         </div>
-        <a class="cta-detail">>상세정보</a> <!-- ✅ 우측 CTA -->
+        <a class=" times">2024 96분</a>
       </div>
+      <!-- ✅ 아래에 CTA 버튼 추가 -->
+      <a class="cta-detail" href="#">자세히 보러가기</a>
     </div>
   </section>
 
@@ -119,6 +121,43 @@
     </div>
 
     <button class="more-button">더 보러 가기</button>
+  </section>
+
+  <!-- top 8 section -->
+  <section class="top8-section">
+    <h2 class="top8-title">추천수별 <span class="highlight">TOP 8</span></h2>
+
+    <div class="top8-container">
+      <!-- 🎬 왼쪽: 대표 이미지 + 정보 -->
+      <div class="top8-left">
+        <img src="asset/image/home_image/best8_1.png" alt="한강에게 포스터" class="main-poster" />
+        <div class="main-info">
+          <h3 class="main-title">한강에게</h3>
+          <p class="main-meta">2018 · 로맨스, 드라마 · 한국</p>
+          <p class="main-runtime">⏱ 92분</p>
+          <p class="main-rating">⭐ 4.5</p>
+          <p class="main-description">
+            첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다. 대학교에서 시 수업을 하고, 친구를 만나며 괜찮은 것 같지만 추억과 일상을 써지지 않는
+            시를 붙잡고 있다. “괜찮냐고 묻지 말아 줘…” “자꾸 괜찮냐고 물어보니까. 안 괜찮은데 괜찮다고 말 해야되잖아”
+          </p>
+          <div class="platform-icons">
+            <img src="asset/image/icon_netflix.png" alt="넷플릭스" />
+            <img src="asset/image/icon_watcha.png" alt="왓챠" />
+          </div>
+        </div>
+
+        <!-- 🎞 오른쪽: 썸네일 8개 -->
+        <div class="top8-thumbnails">
+          <img src="asset/image/home_image/best8_1.png" class="thumb active" alt="한강에게" />
+          <img src="asset/image/home_image/best8_2.png" class="thumb" alt="영화2" />
+          <img src="asset/image/home_image/best8_3.png" class="thumb" alt="영화3" />
+          <img src="asset/image/home_image/best8_4.png" class="thumb" alt="영화4" />
+          <img src="asset/image/home_image/best8_5.png" class="thumb" alt="영화5" />
+          <img src="asset/image/home_image/best8_6.png" class="thumb" alt="영화6" />
+          <img src="asset/image/home_image/best8_7.png" class="thumb" alt="영화7" />
+          <img src="asset/image/home_image/best8_8.png" class="thumb" alt="영화8" />
+        </div>
+      </div>
   </section>
 </body>
 
