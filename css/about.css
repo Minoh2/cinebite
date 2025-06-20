@@ -1,7 +1,7 @@
 #about section {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 120px 20rem;
+  padding: 0 120px 120px;
 }
 
 #about h3 {
@@ -220,3 +220,4 @@
   text-align: center;
   color: var(--color-gray-300);
 }
+/* credit end */
