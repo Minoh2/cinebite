@@ -226,3 +226,150 @@ body {
 .cta-detail:hover {
   color: var(--color-primary);
 }
+
+/* 필터바 */
+/* 필터 전체 박스 */
+/* 🔷 필터 섹션 전체 */
+.movie-filter-section {
+  padding: 6rem 16rem;
+  text-align: center;
+}
+
+/* 🔹 섹션 제목 */
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+}
+
+.section-title {
+  font-size: 3.2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+/* 🔶 필터 전체 박스 */
+.filter-container {
+  background-color: #e2e2e2;
+  border-radius: 100px;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 80rem;
+  margin: 0 auto 4rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 슬라이더와 범위 텍스트 */
+.filter-slider-area {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1 1 60%;
+  min-width: 280px;
+}
+
+.filter-slider-area span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.filter-slider-area input[type='range'] {
+  flex-grow: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #0ae4e3, #d5ff49);
+  appearance: none;
+  outline: none;
+}
+
+.filter-slider-area input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter-slider-area input[type='range']::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter-time-label {
+  font-weight: bold;
+  color: #000;
+  margin-left: 0.5rem;
+}
+
+/* 드롭다운 */
+.filter-dropdowns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-dropdowns select {
+  padding: 0.4rem 1rem;
+  border: solid 1px var(--color-gray-300);
+  border-radius: 9999px;
+  background-color: #e6e6e6;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* 🔸 영화 카드 리스트 */
+.movie-card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* 🔸 영화 카드 */
+.movie-card {
+  width: 18.125rem; /* 290px */
+  height: 27.1875rem; /* 435px */
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.movie-title {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* 🔹 더 보러 가기 버튼 */
+.more-button {
+  background-color: var(--color-primary);
+  color: #212121;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  margin: 2rem auto 6rem;
+  display: inline-block;
+}
