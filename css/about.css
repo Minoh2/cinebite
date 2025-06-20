@@ -4,6 +4,11 @@
   padding: 0 120px 20rem;
 }
 
+#about h3 {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
 .about-hero {
   display: flex;
   justify-content: end;
@@ -30,7 +35,7 @@
 .trapezoid {
   width: 400px;
   height: 400px;
-  background: linear-gradient(to bottom, #c3e248, #212121);
+  background: linear-gradient(to bottom, var(--color-primary), #212121);
   opacity: 0.5;
   clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);
   filter: blur(50px);
@@ -64,6 +69,7 @@
   font-weight: var(--font-weight-bold);
   text-align: center;
 }
+/* hero end */
 
 .about-intro {
   display: flex;
@@ -88,12 +94,16 @@
     padding: 0 50px;
   }
 }
+/* intro end */
 
 .about-service__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 24rem;
+
+  &:not(:last-child) {
+    padding-bottom: 24rem;
+  }
 }
 
 .about-service__item:nth-child(even) {
@@ -115,8 +125,6 @@
   display: inline-block;
   position: relative;
   padding-bottom: 24px;
-  font-size: var(--font-size-heading);
-  font-weight: var(--font-weight-bold);
 }
 
 .about-service__item-title::after {
@@ -133,4 +141,82 @@
 
 .about-service__item-body {
   font-size: var(--font-size-lg);
+}
+/* service end */
+
+.about-review__title {
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+.about-review__subtitle {
+  padding-bottom: 40px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
+.about-review__tag-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 16px;
+
+  .linear-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(33, 33, 33, 1) 100%);
+  }
+}
+
+.about-review__tag {
+  padding: 16px 44px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50px;
+  color: var(--color-primary);
+}
+/* review end */
+
+#about .about-credit__title {
+  margin-bottom: 24px;
+  font-size: var(--font-size-lg);
+  text-align: center;
+
+  &.gray-borderline {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-gray-300);
+  }
+}
+
+.about-credit__list {
+  padding-bottom: 80px;
+}
+
+.about-credit__item {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.about-credit__role {
+  width: 150px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  text-align: right;
+}
+
+.about-credit__names {
+  font-size: var(--font-size-md);
+  color: var(--color-gray-300);
+  flex: 1;
+}
+
+.about-credit__message {
+  font-size: var(--font-size-md);
+  text-align: center;
+  color: var(--color-gray-300);
 }
