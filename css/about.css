@@ -1,0 +1,136 @@
+#about section {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 120px 20rem;
+}
+
+.about-hero {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 800px;
+}
+
+.about-hero__projector {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+
+.about-hero__img-box {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.trapezoid {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to bottom, #c3e248, #212121);
+  opacity: 0.5;
+  clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);
+  filter: blur(50px);
+}
+
+.about-hero__heading {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  img {
+    width: 8rem;
+  }
+}
+
+.about-logo__text {
+  font-family: var(--font-family-logo);
+  font-size: 7rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+.about-hero__subtext {
+  padding-top: 100px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.about-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-intro__img-box {
+  img {
+    width: 65%;
+  }
+}
+
+.about-intro__text-content {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  gap: 20px;
+  span {
+    padding: 0 50px;
+  }
+}
+
+.about-service__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24rem;
+}
+
+.about-service__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about-service__img-box {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.about-service__item-desc {
+  width: 40%;
+}
+
+.about-service__item-title {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 24px;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+.about-service__item-title::after {
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: -32px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+  content: '';
+}
+
+.about-service__item-body {
+  font-size: var(--font-size-lg);
+}
