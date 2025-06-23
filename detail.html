@@ -14,8 +14,8 @@
     <main id="detail">
         <div class="nav"></div>
         <div class="hero">
-            <div class="main-title">
-                <div class="title">
+            <div class="hero-title">
+                <div class="title-poster">
                     <div class="second">
                         <img src="../asset/images/detail/메기 2.png" alt="">
                     </div>
@@ -37,13 +37,30 @@
                         <img src="../asset/images/detail/platform1.png" alt="">
                         <img src="../asset/images/detail/platform2.png" alt="">
                     </div>
-                    <div class="star">
+                    <div class="m-star">
                         <p class="card-text">⭐⭐⭐⭐⭐</p>
                         <h1>3.5</h1>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="section0">
+            <div class="heart">
+                <a href=""><img src="../asset/images/detail/section0_Heart.png" alt=""></a>
+                <p><a href="">찜하기</a></p>
+            </div>
+            <div class="ShareFat">
+                <a href=""><img src="../asset/images/detail/section0_ShareFat.png" alt=""></a>
+                <p><a href="">공유하기</a></p>
+            </div>
+        </section>
+
+
+
+
+
+
         <section class="section1">
             <div class="border"></div>
             <div class="s-platform">
@@ -55,15 +72,17 @@
                     <dt><a href="#">대여</a></dt>
                     <dt><a href="#">구매</a></dt>
                 </dl>
-                <div class="p-box">
-                    <div><img src="../asset/images/detail/platform1.png" alt=""></div>
-                    <p>쿠팡 플레이</p>
-                    <h3>1,400원</h3>
-                </div>
-                <div class="p-box">
-                    <div><img src="../asset/images/detail/platform1.png" alt=""></div>
-                    <p>Apple TV</p>
-                    <p>1,400원</p>
+                <div class="platform-container">
+                    <div class="p-box1">
+                        <div><img src="../asset/images/detail/platform1.png" alt=""></div>
+                        <p class="platform">쿠팡 플레이</p>
+                        <p>1,400원</p>
+                    </div>
+                    <div class="p-box2">
+                        <div><img src="../asset/images/detail/platform1.png" alt=""></div>
+                        <p class="platform">Apple TV</p>
+                        <p>1,400원</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -147,15 +166,15 @@
                         </div>
 
                     </div>
-                    <!-- <div class="ss-box">
+                    <div class="ss-box">
                         <div class="s-img">
                             <img src="../asset/images/detail/section2_human1.png" alt="">
-                            <div>
+                            <div class="txt">
                                 <h2 class="body">웨스 앤더스</h2>
                                 <h3>감독</h3>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             </div>
@@ -165,31 +184,336 @@
 
         </section>
         <section class="section3">
+            <div class="border2"></div>
             <h1 class="s-title">감상평</h1>
-            <div class="coment">
-                <div class="coment-container">
-                    <img src="../asset/images/detail/section3_profile.png" alt="">
-                    <h3 class="body">바이트123</h3>
-                    <p>⭐</p>
-                    <h3 class="body">3.5</h3>
-                    <h3 class="body">사고와 위험이 만연한 시대에, 위트 있게 풀어내는 의심사용설명서.</h3>
-                    <p>2025.06.18</p>
+            <div class="review-container">
+                <div class="review">
+                    <div class="review-star">
+                        <p>이 작품 어떠셨나요?</p>
+                        <div class="wrap">
+                            <div class="rating">
+                                <label class="rating__label rating__label--half" for="starhalf">
+                                    <input type="radio" id="starhalf" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--full" for="star1">
+                                    <input type="radio" id="star1" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--half" for="star1half">
+                                    <input type="radio" id="star1half" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--full" for="star2">
+                                    <input type="radio" id="star2" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--half" for="star2half">
+                                    <input type="radio" id="star2half" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--full" for="star3">
+                                    <input type="radio" id="star3" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--half" for="star3half">
+                                    <input type="radio" id="star3half" class="rating__input" name="rating" checked>
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--full" for="star4">
+                                    <input type="radio" id="star4" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--half" for="star4half">
+                                    <input type="radio" id="star4half" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                                <label class="rating__label rating__label--full" for="star5">
+                                    <input type="radio" id="star5" class="rating__input" name="rating" value="">
+                                    <span class="star-icon"></span>
+                                </label>
+                            </div>
+                            <button class="rv-btn">리뷰 작성하러 가기</button>
+                        </div>
+                    </div>
+
+
                 </div>
-                <button class="btn-b">감상평 더보기</button>
-            </div>
+                <div class="review">
+                    <div class="review-box">
+                        <img src="../asset/images/detail/section3_profile.png" alt="">
+                        <div class="c-coment">
+                            <h3 class="t-body">바이트123</h3>
+                            <div class="s-star">
+                                <p>⭐</p>
+                                <h3>3.5</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="review-text">사고와 위험이 만연한 시대에, 위트 있게 풀어내는 의심사용설명서.</h3>
+                    <p class="review-date">2025.06.18</p>
+                </div>
+                <div class="review">
+                    <div class="review-box">
+                        <img src="../asset/images/detail/section3_profile.png" alt="">
+                        <div class="c-coment">
+                            <h3 class="t-body">바이트123</h3>
+                            <div class="s-star">
+                                <p>⭐</p>
+                                <h3>3.5</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="review-text">사고와 위험이 만연한 시대에, 위트 있게 풀어내는 의심사용설명서.</h3>
+                    <p class="review-date">2025.06.18</p>
+                </div>
+                <div class="review">
+                    <div class="review-box">
+                        <img src="../asset/images/detail/section3_profile.png" alt="">
+                        <div class="c-coment">
+                            <h3 class="t-body">바이트123</h3>
+                            <div class="s-star">
+                                <p>⭐</p>
+                                <h3>3.5</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="review-text">사고와 위험이 만연한 시대에, 위트 있게 풀어내는 의심사용설명서.</h3>
+                    <p class="review-date">2025.06.18</p>
+                </div>
+                <div class="btn">
+                    <a href=""><img src="../asset/images/detail/section3_btn.png" alt=""></a>
+                    <a href="">감상평 더보기</a>
+                </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="section4">
             <h1 class="s-title">예고편</h1>
+            <div class="video">
+                <div class="video1">
+                    <img src="../asset/images/detail/section4_video1.png" alt="">
+                    <p>메인 예고편</p>
+                </div>
+                <div class="video2">
+                    <img src="../asset/images/detail/section4_video2.png" alt="">
+                    <p>메인 예고편</p>
+                </div>
+            </div>
         </section>
+
+
+
+
+
+
+
+
         <section class="section5">
             <h1 class="s-title">스틸컷</h1>
+            <div class="image">
+                <a href=""><img src="../asset/images/detail/section5_image1.png" alt=""></a>
+                <a href=""><img src="../asset/images/detail/section5_image2.png" alt=""></a>
+                <a href=""><img src="../asset/images/detail/section5_image3.png" alt=""></a>
+                <a href=""><img src="../asset/images/detail/section5_image4.png" alt=""></a>
+                <a href=""><img src="../asset/images/detail/section5_image5.png" alt=""></a>
+                <a href=""><img src="../asset/images/detail/section5_image6.png" alt=""></a>
+
+            </div>
         </section>
-        <section class="section5">
+
+
+
+
+
+        <section class="section6">
+            <div class="border2"></div>
             <h1 class="s-title">비슷한 작품</h1>
-            <h1 class="s-title">감독의 다른 작품</h1>
+            <div class="movie-box1">
+                <div class="movie-collection-box">
+                    <div class="movie-collection">
+                        <a href=""><img src="../asset/images/detail/section6_image1.png" alt=""></a>
+                        <div class="movie-txt">
+                            <div class="m-txt">
+                                <h3>한강에게</h3>
+                                <p>32분</p>
+                            </div>
+                            <p class="writing">첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다. 대학교에서 시 수업을
+                                하고, 친구를 만나며 괜찮은 것
+                                같지만
+                                추억과
+                                일상을 써지지 않는 시를 붙잡고 있다. “괜찮냐고 묻지 말아 줘…” “자꾸 괜찮냐고 물어보니까. 안 괜찮은데 괜찮다고 말 해야되잖아”
+                                하고, 친구를 만나며 괜찮은 것 같지만 추억과 일상을 써지지 않는 시를 붙잡고 있다. “괜찮냐고 묻지 말아 줘…” “자꾸 괜찮냐고 물어보니까. 안 괜찮은데
+                                괜찮다고
+                                말
+                                해야되잖아”</p>
+                        </div>
+                    </div>
+                    <div class="movie-collection">
+                        <a href=""><img src="../asset/images/detail/section6_image1.png" alt=""></a>
+                        <div class="movie-txt">
+                            <div class="m-txt">
+                                <h3>한강에게</h3>
+                                <p>32분</p>
+                            </div>
+                            <p class="writing">fewafeawfew첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다.
+                                대학교에서 시 수업을 하고, 친구를 만나며 괜찮은 것
+                                같지만
+                                추억과
+                                일상을 써지지 않는 시를 붙잡고 있다. “괜찮냐고 묻지 말아 줘…” “자꾸 괜찮냐고 물어보니까. 안 괜찮은데 괜찮다고 말 해야되잖아”
+                                하고, 친구를 만나며 괜찮은 것 같지만 추억과 일상을 써지지 않는 시를 붙잡고 있다. “괜찮냐고 묻지 말아 줘…” “자꾸 괜찮냐고 물어보니까. 안 괜찮은데
+                                괜찮다고
+                                말
+                                해야되잖아”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-box2">
+                <h1 class="s-title">감독의 다른 작품</h1>
+                <div class="movie-collection-box">
+                    <div class="movie-collection">
+                        <a href=""><img src="../asset/images/detail/section6_image1.png" alt=""></a>
+                        <div class="movie-txt">
+                            <div class="m-txt">
+                                <h3>한강에게</h3>
+                                <p>32분</p>
+                            </div>
+                            <p class="writing">fewafeaw첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다. 대학교에서
+                                시 수업을 하고, 친구를 만나며 괜찮은 것
+                                같지만
+                                추억과
+                                일상을 써지지 않는 시를 붙잡고 있다. “괜찮냐고 묻지 말아 줘…” “자꾸 괜찮냐고 물어보니까. 안 괜찮은데 괜찮다고 말 </p>
+                        </div>
+                    </div>
+                    <div class="movie-collection">
+                        <a href=""><img src="../asset/images/detail/section6_image1.png" alt=""></a>
+                        <div class="movie-txt">
+                            <div class="m-txt">
+                                <h3>한강에게</h3>
+                                <p>32분</p>
+                            </div>
+                            <p class="writing">ggggggg첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다. 대학교에서
+                                시 수업을 하고, 친구를 만나며 괜찮은 것
+                                같지만
+                                추억과
+                                일상을 써지지 않는 시를 붙잡고 있다. “괜찮냐고 묻지 말아 줘…” “자꾸 괜찮냐고 물어보니까. 안 괜찮은데 괜찮다고 말 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <footer>
+            <h1>푸터</h1>
+        </footer>
     </main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const rateWrap = document.querySelectorAll('.rating'),
+            label = document.querySelectorAll('.rating .rating__label'),
+            input = document.querySelectorAll('.rating .rating__input'),
+            labelLength = label.length,
+            opacityHover = '0.5';
+
+        let stars = document.querySelectorAll('.rating .star-icon');
+
+        checkedRate();
+
+        rateWrap.forEach(wrap => {
+            wrap.addEventListener('mouseenter', () => {
+                stars = wrap.querySelectorAll('.star-icon');
+
+                stars.forEach((starIcon, idx) => {
+                    starIcon.addEventListener('mouseenter', () => {
+                        initStars();
+                        filledRate(idx, labelLength);
+
+                        for (let i = 0; i < stars.length; i++) {
+                            if (stars[i].classList.contains('filled')) {
+                                stars[i].style.opacity = opacityHover;
+                            }
+                        }
+                    });
+
+                    starIcon.addEventListener('mouseleave', () => {
+                        starIcon.style.opacity = '1';
+                        checkedRate();
+                    });
+
+                    wrap.addEventListener('mouseleave', () => {
+                        starIcon.style.opacity = '1';
+                    });
+                });
+            });
+        });
+
+        function filledRate(index, length) {
+            if (index <= length) {
+                for (let i = 0; i <= index; i++) {
+                    stars[i].classList.add('filled');
+                }
+            }
+        }
+
+        function checkedRate() {
+            let checkedRadio = document.querySelectorAll('.rating input[type="radio"]:checked');
+
+
+            initStars();
+            checkedRadio.forEach(radio => {
+                let previousSiblings = prevAll(radio);
+
+                for (let i = 0; i < previousSiblings.length; i++) {
+                    previousSiblings[i].querySelector('.star-icon').classList.add('filled');
+                }
+
+                radio.nextElementSibling.classList.add('filled');
+
+                function prevAll() {
+                    let radioSiblings = [],
+                        prevSibling = radio.parentElement.previousElementSibling;
+
+                    while (prevSibling) {
+                        radioSiblings.push(prevSibling);
+                        prevSibling = prevSibling.previousElementSibling;
+                    }
+                    return radioSiblings;
+                }
+            });
+        }
+
+        function initStars() {
+            for (let i = 0; i < stars.length; i++) {
+                stars[i].classList.remove('filled');
+            }
+        }
+    </script>
 </body>
 
 </html>
