@@ -1,4 +1,7 @@
-body {
+#home section:not(:first-child) {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 160px 180px;
   height: 8000px;
 }
 
@@ -355,7 +358,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem; /* 이미지와 더보기 사이간 간격 */
 }
 
 /* 🔸 영화 카드 */
@@ -373,11 +376,11 @@ body {
   object-fit: cover;
 }
 
-.movie-title {
+/* .movie-title {
   margin-top: 1rem;
   font-weight: 500;
   font-size: 1rem;
-}
+} */
 
 /* 🔹 더 보러 가기 버튼 */
 .more-button {
@@ -387,7 +390,7 @@ body {
   border: none;
   border-radius: 5rem;
   cursor: pointer;
-  margin: 2rem auto 6rem;
+  margin: 1rem auto;
   display: inline-block;
   font-weight: var(--font-weight-semibold);
   font-size: 2rem;
@@ -397,14 +400,14 @@ body {
 .top8-section {
   padding: 4rem 16rem;
   background-color: var(--color-bg);
-  margin-top: 6rem;
+  margin-top: 18rem; /* 섹션별 간격*/
 }
 
 .top8-title {
   font-size: 3.2rem;
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
-  text-align: center;
+  text-align: left;
   margin-bottom: 2.4rem;
   line-height: 1.5;
 }
@@ -423,12 +426,30 @@ body {
 /* 좌측 이미지 + 텍스트 */
 .top8-left {
   display: flex;
+  align-items: flex-start;
   gap: 2rem;
 }
 
+.main-info-block {
+  display: flex;
+  flex-direction: column;
+  min-height: 56rem;
+  /* gap: 1rem; */
+}
+
+.platform-icons {
+  display: flex;
+  gap: 0.2rem;
+  margin-top: 50rem;
+}
+
+.platform-icons img {
+  width: 2.8rem;
+}
+
 .main-poster {
-  width: 24rem;
-  height: 44rem;
+  width: 28rem;
+  height: 50rem;
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
@@ -442,40 +463,65 @@ body {
   font-size: 1.4rem;
 }
 
-.main-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--color-text);
+/* 제목 + 러닝타임 같이 나오는 줄 */
+.main-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.main-meta,
-.main-runtime,
-.main-rating {
-  color: #555;
+/* 영화 제목 */
+.main-title {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0; /* 혹시 있을 여백 제거 */
+}
+
+/* 러닝타임 (⏱ 92분) */
+.main-runtime {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-primary); /* ✅ 프라이머리 컬러 */
+  white-space: nowrap;
+}
+
+/* 서브 정보 (년도/장르/국가) */
+.main-meta {
+  /* font-size: var(--font-size-md); */
+  font-size: 1.5rem;
+  color: #bababa;
+  margin-top: 0.2rem;
 }
 
 .main-description {
-  color: #444;
+  color: var(--color-text);
   line-height: 1.6;
   margin: 1rem 0;
+  /* font-size: var(--font-size-lg); */
+}
+
+.platform-icons {
+  margin-top: 1.5rem;
 }
 
 .platform-icons img {
   width: 2.8rem;
+  margin-top: 11rem;
   margin-right: 0.8rem;
 }
 
 /* 썸네일 영역: 4 × 2 정렬 */
 .top8-thumbnails {
   display: grid;
-  grid-template-columns: repeat(4, 160px);
-  grid-template-rows: repeat(2, 240px);
+  grid-template-columns: repeat(4, 15rem);
+  grid-template-rows: repeat(2, 24rem);
   gap: 1.2rem;
 }
 
 .thumb {
-  width: 160px;
-  height: 240px;
+  width: 14rem;
+  height: 24rem;
   object-fit: cover;
   border-radius: 0.8rem;
   opacity: 0.4;
@@ -488,4 +534,286 @@ body {
   filter: none;
   transform: scale(1.05);
   border: 2px solid var(--color-primary);
+}
+
+/* 전체 섹션 */
+.indie30-section {
+  max-width: 1600px;
+  margin: 16rem auto;
+  padding: 0 160px 180px;
+}
+
+.indie30-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem; /* ✅ 좌우 간격 줄이고 싶다면 이 값 조정 */
+  padding: 0 2rem;
+}
+
+.indie30-left-text {
+  flex-shrink: 0;
+  width: 22rem;
+}
+
+.indie30-left-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.indie30-left-text .highlight {
+  color: var(--color-primary);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+.indie30-left-text p {
+  /* font-size: var(--font-size-lg); */
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: var(--color-text-text);
+}
+
+/* 카드 리스트 */
+.indie30-card-list {
+  display: flex;
+  gap: 1.6rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.indie30-card {
+  position: relative;
+  width: 22rem;
+  height: 27rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.indie30-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 카드 하단 텍스트 */
+.indie30-card-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.card-desc {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* 🔻 데뷔작 모음 섹션 */
+.debut-section {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 160px 180px;
+  margin-top: 18rem;
+}
+
+.debut-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* 좌측 텍스트 영역 */
+.debut-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.debut-header h2 {
+  font-size: var(--font-size-heading);
+  color: var(--color-text);
+}
+
+.debut-header .highlight {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.debut-count {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+/* 카드 리스트 */
+.debut-card-list {
+  display: flex;
+  gap: 1.6rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+/* 카드 */
+.debut-card {
+  position: relative;
+  width: 32rem;
+  height: 27rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.debut-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 이미지 내부 텍스트 오버레이 */
+.debut-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+}
+
+.debut-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.debut-desc {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.trailer-section {
+  position: relative;
+  padding: 8rem 0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* 🔹 타이틀 & 뱃지 중앙 정렬 */
+.trailer-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* 이 줄이 핵심입니다 */
+  margin-bottom: 4rem;
+}
+
+.trailer-header h2 {
+  font-size: 3.2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+.trailer-header .highlight {
+  color: var(--color-primary);
+}
+
+.ai-badge {
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.6rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 9999px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 이하 계단식 카드 배치는 이전과 동일 */
+
+/* 🔻 상황별 추천 */
+.situation-section {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 160px 180px;
+}
+
+.situation-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.situation-header h2 {
+  font-size: 3rem;
+  color: var(--color-text);
+}
+
+.situation-header .primary {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.hashtag-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hashtag {
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hashtag:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* 🔸 카드 한 줄에 5개 고정 */
+.situation-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.situation-row img {
+  width: calc((100% - 4 * 1.6rem) / 5); /* gap이 4개니까 */
+  height: auto;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.situation-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.more-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
 }
