@@ -1,7 +1,7 @@
 #about section {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 120px 120px;
+  padding: 0 160px 180px;
 }
 
 #about h3 {
@@ -29,16 +29,7 @@
 .about-hero__img-box {
   display: flex;
   justify-content: center;
-  padding-left: 50px;
-}
-
-.trapezoid {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(to bottom, var(--color-primary), #212121);
-  opacity: 0.5;
-  clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);
-  filter: blur(50px);
+  padding-left: 58px;
 }
 
 .about-hero__heading {
@@ -69,6 +60,16 @@
   font-weight: var(--font-weight-bold);
   text-align: center;
 }
+
+/* gsap 효과 */
+.about-hero > *:not(:first-child) {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.about-hero__projector-beam {
+  opacity: 0;
+}
 /* hero end */
 
 .about-intro {
@@ -94,6 +95,14 @@
     padding: 0 50px;
   }
 }
+
+.about-intro__img-box img,
+.about-intro__duration span {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 /* intro end */
 
 .about-service__item {
@@ -144,9 +153,25 @@
 }
 /* service end */
 
-.about-review__title {
+.about-review__title,
+.about-timeline {
+  position: relative;
   padding-bottom: 4px;
   text-align: center;
+}
+
+.about-review__title::before,
+.about-timeline::before {
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+  transform: translateX(-50%);
+  content: '';
 }
 
 .about-review__subtitle {
@@ -178,6 +203,71 @@
   color: var(--color-primary);
 }
 /* review end */
+
+#about-calendar {
+  display: flex;
+  padding: 40px 0;
+  overflow-x: scroll;
+  gap: 16px;
+  /* background: linear-gradient(180deg, rgba(21, 21, 21, 0.1) 50%, rgba(0, 0, 0, 1) 100%); */
+}
+
+.day-cell {
+  flex-shrink: 0;
+  width: 150px;
+  text-align: center;
+}
+
+.day-name {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-300);
+}
+
+.day-number {
+  margin-top: 8px;
+  padding-top: 10px;
+  border-bottom: 2px solid var(--color-text);
+  font-size: 5.6rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.tasks {
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.task {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: var(--font-size-md);
+  color: var(--color-bg);
+  background-color: var(--color-text);
+}
+
+#about-calendar::-webkit-scrollbar {
+  height: 8px;
+}
+
+#about-calendar::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: var(--color-text);
+  cursor: pointer;
+}
+
+#about-calendar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+#about-calendar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+}
+/* timeline end */
+
+#about .about-credit {
+  padding-bottom: 120px;
+}
 
 #about .about-credit__title {
   margin-bottom: 24px;
