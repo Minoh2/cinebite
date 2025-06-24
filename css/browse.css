@@ -1,0 +1,110 @@
+
+#browse section{
+    margin: 0 auto;
+    max-width: 1600px;
+    margin-top: 8rem;
+    position: relative;
+}
+#browse h2{
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-base);
+    margin-bottom: 40px;
+}
+#browse h1{
+    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-base);
+    margin-left: 15rem;
+    margin-top: 6rem;
+}
+#browse .movie-slider {
+  display: flex;
+  align-items: center;
+}
+#browse .movie-track {
+  display: flex;
+  gap: 75px;
+  position: relative;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+#browse .movie-card {
+  flex: 0 0 260px;
+  text-align: center;
+  align-items: center;
+    display: flex;
+  flex-direction: column;
+}
+#browse img{
+    width: 100%;
+}
+#browse .rating{
+    color: var( --color-gray-300);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+}
+#browse .rating span{
+    color: var( --color-secondary);
+}
+#browse .rating .star{
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+}
+#browse .rating .stroke{
+    width: 2px;
+    height: 12px;
+    margin: auto 20px;
+}
+#browse .title{
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+    margin-top: 2rem;
+}
+#browse .slide-btn.prev{
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: -2.5rem;
+    transform: translateY(-50%);
+}
+#browse .slide-btn.next{
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  right: -2.5rem;
+  transform: translateY(-50%);
+}
+#browse i{
+    width: 100%;
+    color: var(--color-bg);
+}
+#brows .prev {
+  margin-right: 1rem;
+}
+
+#brows.next {
+  margin-left: 1rem;
+}
