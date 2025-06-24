@@ -87,33 +87,36 @@ const movies = [
     platforms: ['netflix', 'tving'],
   },
   {
-    title: '영화2',
-    runtime: '89분',
-    meta: '2022 / 코미디 / 한국',
+    title: '굴뚝마을의 푸펠',
+    runtime: '100분',
+    meta: '2020 / 애니메이션 / 일본',
     rating: '4.0',
     stars: 4.0,
-    description: '웃음과 감동이 공존하는 따뜻한 가족 이야기.',
+    description:
+      '새까만 연기로 뒤덮인 굴뚝마을에서 하늘을 올려다보지 말 것 이라는 규칙 아래 살아온 소년 루비치가 등장합니다.그는 하늘과 별을 믿는 외톨이죠. 어느 날, 쓰레기로 만들어진 인형 같은 존재 푸펠과 친구가 되어 함께 진실을 찾기 위한 모험을 떠납니다.이야기는 폐쇄된 사회에서의 꿈과 진실, 우정과 용기에 대한 메시지를 전합니다',
     poster: 'asset/images/home_image/best8_2.png',
     platforms: ['netflix'],
   },
   {
-    title: '영화3',
-    runtime: '97분',
-    meta: '2021 / 스릴러 / 미국',
+    title: '500일의 썸머',
+    runtime: '95분',
+    meta: '2009 / 로맨스 / 미국',
     rating: '3.5',
     stars: 3.5,
-    description: '서스펜스와 반전이 가득한 한밤의 추격전.',
+    description:
+      '음침한 그리팅 카드 작가 톰은 유쾌함과 감정의 롤러코스터를 선사하는 썸머와의 500일간의 관계를 회상하며 진실한 사랑을 찾기 시작한다.',
     poster: 'asset/images/home_image/best8_3.png',
     platforms: ['tving'],
   },
   {
-    title: '영화3',
-    runtime: '97분',
-    meta: '2021 / 스릴러 / 미국',
+    title: '팜스프링스',
+    runtime: '90분',
+    meta: '2020 / 로맨틱코미디 / 미국',
     rating: '3.5',
     stars: 3.5,
-    description: '서스펜스와 반전이 가득한 한밤의 추격전.',
-    poster: 'asset/images/home_image/best8_3.png',
+    description:
+      '결혼식 하객으로 참석한 나일스와 사라는 뜻하지 않게 같은 하루를 끝없이 반복하게 된다. 시간 루프에 갇힌 이 둘은 현실을 벗어나기 위해 협력하며 점차 서로에게 끌리게 된다.',
+    poster: 'asset/images/home_image/best8_4.png',
     platforms: ['tving'],
   },
   {
@@ -190,14 +193,20 @@ thumbnails.forEach((thumb, index) => {
       img.src = 'asset/images/home_image/star.png';
       img.alt = '별';
       img.className = 'star-icon';
-      ratingContainer.insertBefore(img, document.querySelector('.rating-score'));
+      ratingContainer.insertBefore(
+        img,
+        document.querySelector('.rating-score')
+      );
     }
     if (hasHalfStar) {
       const img = document.createElement('img');
       img.src = 'asset/images/home_image/halfstar.png';
       img.alt = '별';
       img.className = 'star-icon';
-      ratingContainer.insertBefore(img, document.querySelector('.rating-score'));
+      ratingContainer.insertBefore(
+        img,
+        document.querySelector('.rating-score')
+      );
     }
 
     // 플랫폼 아이콘 교체
