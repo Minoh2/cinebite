@@ -177,7 +177,7 @@
 
 
 #r-time .hero,
-#r-time .section1 {
+#r-time .section1{
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 160px;
@@ -185,12 +185,21 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+#r-time .section2{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 160px;
+}
 
 
-#r-time .section1 .box{
+
+
+
+#r-time .section1 .box {
   margin-bottom: 50px;
 }
-#r-time .section1 .img-box .image{
+
+#r-time .section1 .img-box .image {
   width: 220px;
 }
 
@@ -203,9 +212,9 @@
   width: fit-content;
 }
 
-#r-time .section1 .img-txt p{
+#r-time .section1 .img-txt p {
   text-align: center;
-    margin-top: 20px;
+  margin-top: 20px;
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
 }
@@ -226,24 +235,44 @@
   margin-top: 5px;
 
   justify-content: center;
-  align-items: center; /* 수직 중앙 정렬 */
+  align-items: center;
+  /* 수직 중앙 정렬 */
 }
 
-#r-time .section1 .img-txt .sub-txt .span{
+#r-time .section1 .img-txt .sub-txt .span {
   display: flex;
-  align-items: center; /* 모든 요소를 수직 중앙 정렬 */
+  align-items: center;
+  /* 모든 요소를 수직 중앙 정렬 */
   gap: 10px;
-  height: 24px; /* 고정 높이로 baseline 통일 */
+  height: 24px;
+  /* 고정 높이로 baseline 통일 */
 }
 
 #r-time .section1 .img-txt .sub-txt .span span {
   display: flex;
   align-items: center;
   height: 100%;
-  line-height: 1; /* 라인 높이 초기화 */
+  line-height: 1;
+  /* 라인 높이 초기화 */
 }
 
 #r-time .section1 .img-txt .sub-txt .span span:first-child {
   color: var(--color-gray-300);
   font-weight: normal;
+}
+
+#r-time .section2 button {
+  margin-top: 110px;
+    width: 170px;
+  height: 56px;
+  background-color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  border-radius: 50px;
+  color: var(--color-bg);
+  margin-bottom: 170px;
+}
+
+#r-time .section2{
+  text-align: center;
 }
