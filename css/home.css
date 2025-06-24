@@ -14,7 +14,12 @@
   width: 100vw; /* ✅ 전체 화면 너비 강제 적용 */
   height: 8rem;
 
-  background: linear-gradient(to bottom, rgba(33, 33, 33, 0.9) 0%, rgba(33, 33, 33, 0.6) 50%, rgba(33, 33, 33, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(33, 33, 33, 0.9) 0%,
+    rgba(33, 33, 33, 0.6) 50%,
+    rgba(33, 33, 33, 0) 100%
+  );
 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -954,4 +959,22 @@
   border-radius: 2rem;
   border: none;
   cursor: pointer;
+}
+
+.footer {
+  padding: 32px 0;
+  color: var(--color-gray-300);
+}
+
+.footer__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+  gap: 96px;
+}
+
+.footer__info > * {
+  padding-bottom: 24px;
+  text-align: center;
 }
