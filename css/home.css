@@ -14,12 +14,7 @@
   width: 100vw; /* ✅ 전체 화면 너비 강제 적용 */
   height: 8rem;
 
-  background: linear-gradient(
-    to bottom,
-    rgba(33, 33, 33, 0.9) 0%,
-    rgba(33, 33, 33, 0.6) 50%,
-    rgba(33, 33, 33, 0) 100%
-  );
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0.9) 0%, rgba(33, 33, 33, 0.6) 50%, rgba(33, 33, 33, 0) 100%);
 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -761,6 +756,111 @@
 
 .trailer-header .highlight {
   color: var(--color-primary);
+}
+
+.heading {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading);
+  text-align: center;
+}
+
+.trailer-section {
+  position: relative;
+  padding: 8rem 0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.trailer-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.trailer-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.trailer-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.trailer-info {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: white;
+}
+
+.trailer-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.trailer-runtime {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-top: 0.2rem;
+}
+
+/* 크기 및 위치 조정 */
+.center {
+  width: 38rem;
+  z-index: 3;
+  transform: scale(1);
+}
+.left1,
+.right1 {
+  width: 28rem;
+  z-index: 2;
+  transform: scale(0.85);
+}
+.left2,
+.right2 {
+  width: 20rem;
+  z-index: 1;
+  transform: scale(0.7);
+}
+
+/* 위치 보정용 margin 또는 translate 조절 가능 */
+.left2 {
+  margin-right: -6rem;
+}
+.left1 {
+  margin-right: -4rem;
+}
+.right1 {
+  margin-left: -4rem;
+}
+.right2 {
+  margin-left: -6rem;
+}
+
+.trailer-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 1rem;
+  background-image: url('asset/image/icons/arrow-left.png');
+}
+.right-arrow {
+  right: 1rem;
+  background-image: url('asset/image/icons/arrow-right.png');
 }
 
 .ai-badge {
