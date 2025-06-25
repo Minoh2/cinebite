@@ -147,7 +147,7 @@
 }
 
 .movie-title {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
   margin-top: 20px;
   margin-bottom: 6px;
@@ -157,7 +157,6 @@
   align-items: center;
   display: inline-block;
   vertical-align: middle;
-  font-size: var(--font-size-lg);
   color: var(--color-gray-300);
 }
 
@@ -167,7 +166,6 @@
 }
 
 .rating-text {
-  font-size: var(--font-size-lg);
   color: #c3e248;
   margin-left: 3px;
 }
@@ -179,9 +177,8 @@
 }
 
 .duration-text {
-  font-size: var(--font-size-lg);
   color: var(--color-gray-300);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
 }
 
 /* 영화찜 끝 */
