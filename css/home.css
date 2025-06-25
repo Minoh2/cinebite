@@ -750,13 +750,13 @@
 }
 
 .slide-title {
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
 }
 
 .slide-duration {
-  font-size: 1.2rem;
-  color: var(--primary-color, #00d4ff);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
   margin-top: 0.4rem;
 }
 
