@@ -15,12 +15,12 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  height: 800px;
+  height: 870px;
 }
 
 .about-hero__projector {
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 50%;
   z-index: -1;
   transform: translateX(-50%);

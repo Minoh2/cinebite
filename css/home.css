@@ -4,147 +4,6 @@
   padding: 90px 160px 90px;
 }
 
-.nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-
-  width: 100vw; /* ✅ 전체 화면 너비 강제 적용 */
-  height: 8rem;
-
-  background: linear-gradient(to bottom, rgba(33, 33, 33, 0.9) 0%, rgba(33, 33, 33, 0.6) 50%, rgba(33, 33, 33, 0) 100%);
-
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  background-blend-mode: overlay;
-
-  color: var(--color-text);
-}
-
-.nav-wrapper {
-  height: 100%;
-  max-width: 100%;
-  margin: 0 16rem; /* ✅ 콘텐츠만 가운데로 */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* 좌측: 로고 + 메뉴 */
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 7.2rem; /* 로고와 메뉴 간 간격 72px */
-}
-
-.logo img {
-  height: 3.2rem;
-  object-fit: contain;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 3.2rem; /* 메뉴 항목 간 간격 32px */
-}
-
-.nav-links li a {
-  color: var(--color-text);
-  text-decoration: none;
-  font-size: var(--font-size-md);
-  transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-  color: var(--color-primary);
-}
-
-/* 우측: 검색창 + 알림 + 프로필 + 닉네임 */
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-/* 검색 박스 */
-.search-box {
-  background-color: transparent;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.8rem;
-  display: block;
-}
-
-.search-wrapper {
-  position: relative;
-  width: 20rem;
-}
-
-.search-wrapper input {
-  width: 100%;
-  padding: 0.8rem 3.6rem;
-  font-size: var(--font-size-sm);
-  border: 1px solid var(--color-gray-300); /* ✅ 얇은 회색 라인 */
-  border-radius: 1rem;
-  background-color: transparent; /* ✅ 배경 제거 */
-  color: var(--color-text);
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.search-icon {
-  position: absolute;
-  left: 1.2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--color-gray-300);
-  pointer-events: none;
-}
-
-.search-hint {
-  position: absolute;
-  right: 1.2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--color-gray-300);
-  font-size: var(--font-size-sm);
-  pointer-events: none;
-  white-space: nowrap;
-}
-
-.search-wrapper input:focus + .search-hint,
-.search-wrapper input:not(:placeholder-shown) + .search-hint {
-  display: none;
-}
-
-.search-wrapper button[type='submit'] {
-  display: none;
-}
-
-/* 아이콘 버튼 공통 (🔔) */
-.nav-icons button {
-  background: none;
-  border: none;
-  color: var(--color-text);
-  font-size: var(--font-size-lg);
-  cursor: pointer;
-}
-
-/* 프로필 이미지 */
-.profile img {
-  width: 3.2rem;
-  height: 3.2rem;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* 닉네임 */
-.nickname {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
-}
-
 /* ✅ 인사이드 아웃 전체 섹션 */
 .hero {
   position: relative;
@@ -289,15 +148,21 @@
 
 .filter-slider-area span {
   font-size: var(--font-size-sm);
-  font-weight: 500;
-  color: #333;
+  color: var(--color-bg);
+}
+
+.filter-time-label {
+  font-weight: var(--font-weight-bold);
+  margin-left: 0.5rem;
+  text-align: center;
+  width: 90px;
 }
 
 .filter-slider-area input[type='range'] {
   flex-grow: 1;
   height: 6px;
   border-radius: 3px;
-  background: linear-gradient(to right, #0ae4e3, #d5ff49);
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   appearance: none;
   outline: none;
 }
@@ -319,13 +184,7 @@
   cursor: pointer;
 }
 
-.filter-time-label {
-  font-weight: var(--font-weight-bold);
-  color: #000;
-  margin-left: 0.5rem;
-}
-
-/* 드롭다운 */
+/* 드롭다운
 .filter-dropdowns {
   display: flex;
   gap: 0.5rem;
@@ -341,7 +200,7 @@
   color: #333;
   cursor: pointer;
   appearance: none;
-}
+} */
 
 /* 🔸 영화 카드 리스트 */
 .movie-card-list {
@@ -516,6 +375,7 @@
   opacity: 0.4;
   filter: brightness(50%);
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .thumb.active {
@@ -576,6 +436,8 @@
   flex-shrink: 0;
   border-radius: 1rem;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .indie30-card img {
@@ -589,8 +451,7 @@
 .indie30-card-text {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  padding: 1rem;
+  padding: 2.4rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: #fff;
 }
@@ -666,7 +527,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 2.4rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: #fff;
 }
@@ -750,13 +611,13 @@
 }
 
 .slide-title {
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
 }
 
 .slide-duration {
-  font-size: 1.2rem;
-  color: var(--primary-color, #00d4ff);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
   margin-top: 0.4rem;
 }
 
@@ -889,20 +750,8 @@
   cursor: pointer;
 }
 
-.footer {
-  padding: 32px 0;
-  color: var(--color-gray-300);
-}
-
-.footer__nav-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 32px;
-  gap: 96px;
-}
-
-.footer__info > * {
-  padding-bottom: 24px;
-  text-align: center;
+@media (max-width: 1299px) {
+  .search-box {
+    display: none;
+  }
 }

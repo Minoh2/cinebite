@@ -1,16 +1,15 @@
 #detail .s-title {
-    font-size: var(--font-size-heading);
-    font-weight: var(--font-weight-bold);
-    ;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
 }
 
 .body {
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
 }
 
 #detail .s-title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #detail .section0,
@@ -20,9 +19,9 @@
 #detail .section4,
 #detail .section5,
 #detail .section6 {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 160px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 160px;
 }
 
 #detail .section1,
@@ -32,26 +31,20 @@
 }
 
 section {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .hero {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .section6 {
-    overflow: hidden;
+  overflow: hidden;
 }
-
-
-
-
-
-
 
 #detail .hero {
     width: 100%;
@@ -74,53 +67,46 @@ body {
 }
 
 #detail .second-title {
-    display: flex;
-    margin-top: 24px;
-    gap: 8px;
+  display: flex;
+  margin-top: 24px;
+  gap: 8px;
 }
 
 #detail .hero .txt {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 #detail .hero .txt2 {
-    margin-top: 24px;
-    border-top: 1px solid white;
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-
+  margin-top: 24px;
+  border-top: 1px solid white;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
 }
 
 #detail .hero .txt2 .p1 {
-    margin: 24px 0;
+  margin: 24px 0;
 }
 
 #detail .title-poster .m-star {
-    align-items: center;
-    display: flex;
-    gap: 8px;
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-semibold);
-    color: #FFD566;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: #ffd566;
 }
 
 #detail .title-poster .m-star img {
-    width: 152px;
-    height: 24px;
-
+  width: 152px;
+  height: 24px;
 }
 
 #detail .title-poster .platform {
-    margin: 24px 0;
+  margin: 24px 0;
 }
 
-
-
-
-
-
-
 #detail .section0 {
+
     display: flex;
     text-align: center;
     gap: 40px;
@@ -128,28 +114,23 @@ body {
     font-weight: var(--font-weight-semibold);
 }
 
-
-
 #detail .border {
     border-top: 1px solid rgba(204, 204, 204, .5);
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 60px;
-
 }
 
-
 #detail .section1 dl {
-    display: flex;
-    margin-top: 24px;
-    margin-bottom: 40px;
-
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 40px;
 }
 
 #detail .section1 dl dt {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-    margin-right: 36px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-right: 36px;
 }
 
 #detail .menu-center {
@@ -191,229 +172,192 @@ body {
 
 #detail .section1 .platform-container .p-box1,
 .p-box2 {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 #detail .platform {
-    width: 84px;
+  width: 84px;
 }
 
 #detail .section1 .platform-container .p-box1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
 #detail .section2 .m-title {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 #detail .section2 .m-title .span {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #detail .section2 .m-title .span span {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 #detail .section2 .box-c {
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
 }
-
 
 #detail .section2 .s-box {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-
 #detail .section2 .ss-box {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 #detail .section2 .s-img {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #detail .section2 .txt {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 #detail .section2 .txt h3 {
-    font-size: var(--font-size-md);
-    color: #9E9E9E;
+  font-size: var(--font-size-md);
+  color: #9e9e9e;
 }
 
 #detail .section2 .s-img img {
-    width: 80px;
-    height: 80px
+  width: 80px;
+  height: 80px;
 }
 
-
-
-
-
-
-
-
 #detail .section3 .m-title {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 #detail .section3 .m-title .span {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #detail .section3 .m-title .span span {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
-
-
 #detail .section3 .review-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #detail .section3 .review {
-    width: 290px;
-    height: 215px;
-    background-color: #404040;
-    border-radius: 10px;
-    padding: 30px;
+  width: 290px;
+  height: 215px;
+  background-color: #404040;
+  border-radius: 10px;
+  padding: 30px;
 }
 
 #detail .section3 .review-star {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    gap: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 15px;
 }
 
 #detail .section3 .wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    /* 별점과 버튼 사이 간격 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  /* 별점과 버튼 사이 간격 */
 }
-
 
 #detail .section3 .review .rv-btn {
-    background-color: var(--color-primary);
-    font-weight: var(--font-weight-semibold);
-    font-size: 15px;
-    width: 150px;
-    height: 40px;
-    border-radius: 50px;
-    color: #404040;
+  background-color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: 15px;
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  color: #404040;
 }
 
-
-
 #detail .section3 .rating {
-    float: none;
-    width: 200px;
-    display: flex;
-    margin: 0 auto;
+  float: none;
+  width: 200px;
+  display: flex;
+  margin: 0 auto;
 }
 
 #detail .section3 .rating__input {
-    display: none;
+  display: none;
 }
 
 #detail .section3 .rating__label {
-    width: 20px;
-    overflow: hidden;
-    cursor: pointer;
+  width: 20px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 #detail .section3 .star-icon {
-    width: 20px;
-    height: 40px;
-    display: block;
-    position: relative;
-    left: 0;
-    background-image: url("../asset/images/detail/section3_star2.png");
-    background-repeat: no-repeat;
-    background-size: 40px;
+  width: 20px;
+  height: 40px;
+  display: block;
+  position: relative;
+  left: 0;
+  background-image: url('../asset/images/detail/section3_star2.png');
+  background-repeat: no-repeat;
+  background-size: 40px;
 }
 
 #detail .section3 .star-icon.filled {
-    background-image: url("../asset/images/detail/section3_star.png");
+  background-image: url('../asset/images/detail/section3_star.png');
 }
 
-
 #detail .section3 .rating__label--full .star-icon {
-    background-position: right;
+  background-position: right;
 }
 
 #detail .section3 .rating__label--half .star-icon {
-    background-position: left;
+  background-position: left;
 }
-
 
 #detail .section3 .rating.readonly {
-    cursor: default;
+  cursor: default;
 }
 
-
-
-
-
-
-
-
-
 #detail .section3 .t-body {
-    font-size: 16px;
-    font-weight: var(--font-weight-medium);
-    color: #D9D9D9;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  color: #d9d9d9;
 }
 
 #detail .section3 .c-coment {
-    height: 100%;
-    align-items: center;
-    margin-left: 10px;
+  height: 100%;
+  align-items: center;
+  margin-left: 10px;
 }
 
 #detail .section3 .s-star {
-    display: flex;
-    font-size: 14px;
-    gap: 4px;
+  display: flex;
+  font-size: 14px;
+  gap: 4px;
 }
 
 #detail .section3 .review-box {
-    display: flex;
-    margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 #detail .section3 .review-box img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
-
 
 #detail .section3 .review-text {
     font-size: var(--font-size-md);
@@ -422,165 +366,133 @@ body {
 }
 
 #detail .section3 .btn {
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#detail .section3 .btn>img {
-    flex-direction: column;
+#detail .section3 .btn > img {
+  flex-direction: column;
 }
 
 #detail .section3 .btn a {
-    display: flex;
-    margin: 0 auto;
-    padding-top: 10px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 #detail .section3 .btn p {
-    color: #CCCCCC;
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-medium);
-
-
+  color: #cccccc;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
 }
 
 #detail .section3 .review-date {
-    text-align: right;
-    font-size: 14px;
-    color: #D9D9D9;
+  text-align: right;
+  font-size: 14px;
+  color: #d9d9d9;
 }
 
-
-
-
-
-
-
-
-
-
 #detail .section4 .video {
-    display: flex;
-    gap: 40px;
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-    color: #d9d9d9;
+  display: flex;
+  gap: 40px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: #d9d9d9;
 }
 
 #detail .section4 p {
-    margin-top: 14px;
+  margin-top: 14px;
 }
 
 #detail .section4 .video img {
-    border-radius: 10px;
-    width: 500px;
+  border-radius: 10px;
+  width: 500px;
 }
 
-
-
-
-
-
-
-
-
-
 #detail .section5 .image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #detail .section5 .image a {
-    overflow: hidden;
-    display: inline-block;
-    border-radius: 10px;
-    margin-bottom: 30px;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
-
 #detail .section5 .image a img {
-    transition: transform 0.3s ease;
-    justify-content: space-between;
-    width: 380px;
+  transition: transform 0.3s ease;
+  justify-content: space-between;
+  width: 380px;
 }
 
 /* 마우스 올렸을 때 커지는 효과 */
 #detail .section5 .image a:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
-
-
-
-
-
-
 
 #detail .border2 {
     border-top: 1px solid rgba(204, 204, 204, .5);
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 60px;
-
 }
 
-
 #detail .section6 {
-    margin-bottom: 250px;
+  margin-bottom: 250px;
 }
 
 #detail .section6 .movie-collection-box {
-    display: flex;
+  display: flex;
 }
 
-
 #detail .section6 .movie-collection {
-    display: flex;
-    width: 765px;
+  display: flex;
+  width: 765px;
 }
 
 #detail .section6 .movie-collection img {
-    width: 250px;
+  width: 250px;
 }
 
 #detail .section6 .movie-txt {
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    margin: 40px;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 40px;
 
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 #detail .section6 .movie-txt .m-txt {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 34px;
 }
 
-#detail .section6 .movie-txt .m-txt>h3 {
-    font-size: var(--font-size-heading);
-    font-weight: var(--font-weight-bold);
+#detail .section6 .movie-txt .m-txt > h3 {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
 }
 
-#detail .section6 .movie-txt .m-txt>p {
-    font-size: var(---font-size-xl);
-    font-weight: var(--font-weight-semibold:);
-    color: var(--color-primary);
+#detail .section6 .movie-txt .m-txt > p {
+  font-size: var(---font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
 }
 
 #detail .section6 .movie-txt .writing {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-size-md:);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-size-md);
 }
 
 #detail .section6 .movie-box2 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
