@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEBITE | 보관함</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/mypage.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-wrapper">
+          <!-- 좌측: 로고 + 메뉴 -->
+          <div class="nav-left">
+            <div class="logo">
+              <a href="index.html"><img src="asset/images/logo-primary.svg" alt="logo" /><span class="logo-text">cinebite</span></a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="index.html">홈</a></li>
+              <li><a href="about.html">소개</a></li>
+              <li><a href="#">러닝타임</a></li>
+              <li><a href="browse.html">둘러보기</a></li>
+              <li><a href="mypage.html">보관함</a></li>
+            </ul>
+          </div>
+
+          <!-- 우측: 검색창 + 알림 + 프로필 + 닉네임 -->
+          <div class="nav-icons">
+            <div class="search-box">
+              <form action="/search" method="GET" class="search-wrapper">
+                <span class="search-icon"><img src="asset/images/home_image/icon_search.png" alt="" /></span>
+                <input type="text" name="q" id="searchInput" required />
+                <span class="search-hint">찾고 싶은 영화를 검색해보세요</span>
+                <button type="submit" hidden></button>
+              </form>
+            </div>
+
+            <button class="notification-btn" aria-label="알림"><img src="asset/images/home_image/icon_bell.png" alt="" /></button>
+
+            <div class="profile">
+              <div class="profile__img-box">
+                <img src="asset/images/home_image/bite123.png" alt="프로필 이미지" />
+              </div>
+              <span class="nickname">바이트123</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="mypage">
+      <!-- 프로필 -->
+      <section class="profile-section">
+        <div class="profile-left">
+          <img src="./asset/images/mypage/powerp.png" alt="프로필 이미지" class="profile-img" />
+          <div class="profile-info">
+            <p class="profile-name">바이트123</p>
+            <p class="profile-email">bite123@cinebite.kr</p>
+            <div class="profile-icons">
+              <img src="./asset/images/mypage/netflix.png" alt="넷플릭스" />
+              <img src="./asset/images/mypage/tving.png" alt="티빙" />
+            </div>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <div class="action">
+            <img src="./asset/images/mypage/PencilSimple.png" alt="수정 아이콘" />
+            <span>프로필 편집</span>
+          </div>
+          <div class="action">
+            <img src="./asset/images/mypage/Trash.png" alt="설정 아이콘" />
+            <span>회원정보 수정</span>
+          </div>
+        </div>
+      </section>
+      <!-- 프로필 끝 -->
+      <!-- 영화찜 시작 -->
+      <section class="watchlist-section">
+        <!-- 상단 텍스트 -->
+        <div class="watchlist-header">
+          <h3 class="watchlist-title">찜한 영화</h3>
+          <div class="watchlist-more">
+            <span>전체 보기</span>
+            <img src="./asset/images/mypage/than.png" alt="화살표 아이콘" class="arrow-icon" />
+          </div>
+        </div>
+        <!-- 영화 리스트 -->
+        <div class="watchlist-grid">
+          <div class="movie-card">
+            <img src="./asset/images/mypage/poster1.png" alt="포스터" class="movie-poster" />
+            <p class="movie-title">문영</p>
+            <div class="movie-meta">
+              <img src="./asset/images/mypage/starr.png" alt="별점" class="star-icon" />
+              <span class="rating-text">4.5</span>
+              <img src="./asset/images/mypage/linnee.png" alt="구분선" class="separator-icon" />
+              <span class="duration-text">64분</span>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="./asset/images/mypage/poster2.png" alt="포스터" class="movie-poster" />
+            <p class="movie-title">내 이름은 꾸제트</p>
+            <div class="movie-meta">
+              <img src="./asset/images/mypage/starr.png" alt="별점" class="star-icon" />
+              <span class="rating-text">4.5</span>
+              <img src="./asset/images/mypage/linnee.png" alt="구분선" class="separator-icon" />
+              <span class="duration-text">64분</span>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="./asset/images/mypage/poster3.png" alt="포스터" class="movie-poster" />
+            <p class="movie-title">성냥공장 소녀</p>
+            <div class="movie-meta">
+              <img src="./asset/images/mypage/starr.png" alt="별점" class="star-icon" />
+              <span class="rating-text">4.5</span>
+              <img src="./asset/images/mypage/linnee.png" alt="구분선" class="separator-icon" />
+              <span class="duration-text">64분</span>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="./asset/images/mypage/poster4.png" alt="포스터" class="movie-poster" />
+            <p class="movie-title">북극 백화점의 안내원</p>
+            <div class="movie-meta">
+              <img src="./asset/images/mypage/starr.png" alt="별점" class="star-icon" />
+              <span class="rating-text">4.5</span>
+              <img src="./asset/images/mypage/linnee.png" alt="구분선" class="separator-icon" />
+              <span class="duration-text">64분</span>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="./asset/images/mypage/poster5.png" alt="포스터" class="movie-poster" />
+            <p class="movie-title">그래비티</p>
+            <div class="movie-meta">
+              <img src="./asset/images/mypage/starr.png" alt="별점" class="star-icon" />
+              <span class="rating-text">4.5</span>
+              <img src="./asset/images/mypage/linnee.png" alt="구분선" class="separator-icon" />
+              <span class="duration-text">64분</span>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="./asset/images/mypage/poster6.png" alt="포스터" class="movie-poster" />
+            <p class="movie-title">더 테이블</p>
+            <div class="movie-meta">
+              <img src="./asset/images/mypage/starr.png" alt="별점" class="star-icon" />
+              <span class="rating-text">4.5</span>
+              <img src="./asset/images/mypage/linnee.png" alt="구분선" class="separator-icon" />
+              <span class="duration-text">64분</span>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="./asset/images/mypage/poster7.png" alt="포스터" class="movie-poster" />
+            <p class="movie-title">스탠 바이 미</p>
+            <div class="movie-meta">
+              <img src="./asset/images/mypage/starr.png" alt="별점" class="star-icon" />
+              <span class="rating-text">4.5</span>
+              <img src="./asset/images/mypage/linnee.png" alt="구분선" class="separator-icon" />
+              <span class="duration-text">64분</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 영화찜 끝 -->
+      <!-- 한줄평 시작 -->
+      <section class="review-section">
+        <!-- 헤더 영역 -->
+        <div class="review-header">
+          <h3 class="review-title">작성한 한줄평</h3>
+          <div class="review-more">
+            <span>전체 보기</span>
+            <img src="./asset/images/mypage/than.png" alt="화살표 아이콘" class="arrow-icon" />
+          </div>
+        </div>
+        <!-- 리뷰 카드 리스트 -->
+        <div class="review-list">
+          <div class="review-card">
+            <div class="card-top">
+              <img src="./asset/images/mypage/rp1.png" alt="포스터" class="review-poster" />
+              <div class="review-info">
+                <p class="review-movie-title">내 이름은 꾸제트</p>
+                <div class="review-rating">
+                  <img src="./asset/images/mypage/starr.png" alt="별점" class="star2-icon" />
+                  <span class="rating2-text">3.5</span>
+                </div>
+              </div>
+              <div class="review-actions">
+                <img src="./asset/images/mypage/PencilSimple.png" alt="수정" class="action-icon" />
+                <img src="./asset/images/mypage/Trash.png" alt="삭제" class="action-icon" />
+              </div>
+            </div>
+            <p class="review-content">
+              실망과 싸우는 세상의 모든 아이들에게,<br />
+              그 곁을 지키는 모든 어른들에게
+            </p>
+            <p class="review-date">2025.06.18</p>
+          </div>
+          <div class="review-card">
+            <div class="card-top">
+              <img src="./asset/images/mypage/rp2.png" alt="포스터" class="review-poster" />
+              <div class="review-info">
+                <p class="review-movie-title">알마</p>
+                <div class="review-rating">
+                  <img src="./asset/images/mypage/starr.png" alt="별점" class="star2-icon" />
+                  <span class="rating2-text">3.5</span>
+                </div>
+              </div>
+              <div class="review-actions">
+                <img src="./asset/images/mypage/PencilSimple.png" alt="수정" class="action-icon" />
+                <img src="./asset/images/mypage/Trash.png" alt="삭제" class="action-icon" />
+              </div>
+            </div>
+            <p class="review-content">기괴한 동화책 한권을 읽은 느낌</p>
+            <p class="review-date">2025.06.18</p>
+          </div>
+          <div class="review-card">
+            <div class="card-top">
+              <img src="./asset/images/mypage/rp3.png" alt="포스터" class="review-poster" />
+              <div class="review-info">
+                <p class="review-movie-title">별의 목소리</p>
+                <div class="review-rating">
+                  <img src="./asset/images/mypage/starr.png" alt="별점" class="star2-icon" />
+                  <span class="rating2-text">3.5</span>
+                </div>
+              </div>
+              <div class="review-actions">
+                <img src="./asset/images/mypage/PencilSimple.png" alt="수정" class="action-icon" />
+                <img src="./asset/images/mypage/Trash.png" alt="삭제" class="action-icon" />
+              </div>
+            </div>
+            <p class="review-content">
+              21세기 인간 세계의 훌륭한 정의<br />
+              '세계란 휴대폰의 전파가 도달하는 곳'
+            </p>
+            <p class="review-date">2025.06.18</p>
+          </div>
+          <div class="review-card">
+            <div class="card-top">
+              <img src="./asset/images/mypage/rp4.png" alt="포스터" class="review-poster" />
+              <div class="review-info">
+                <p class="review-movie-title">룸바</p>
+                <div class="review-rating">
+                  <img src="./asset/images/mypage/starr.png" alt="별점" class="star2-icon" />
+                  <span class="rating2-text">3.5</span>
+                </div>
+              </div>
+              <div class="review-actions">
+                <img src="./asset/images/mypage/PencilSimple.png" alt="수정" class="action-icon" />
+                <img src="./asset/images/mypage/Trash.png" alt="삭제" class="action-icon" />
+              </div>
+            </div>
+            <p class="review-content">
+              다리가 없어도, 기억을 잃더라도,<br />
+              당신과 룸바를 출 수 있다면.
+            </p>
+            <p class="review-date">2025.06.18</p>
+          </div>
+        </div>
+      </section>
+      <!-- 한줄평 끝 -->
+      <section class="preference-section">
+        <!-- 상단 제목 줄 -->
+        <div class="preference-header">
+          <h3 class="preference-title">내 취향 알아보기</h3>
+          <div class="preference-subtag">러닝타임 분석 기반</div>
+        </div>
+        <!-- 그래프 + 결과 -->
+        <div class="preference-main">
+          <!-- 그래프 이미지 -->
+          <div class="preference-graph">
+            <img src="./asset/images/mypage/graph.png" alt="러닝타임 그래프" class="graph-img" />
+          </div>
+          <!-- 결과 박스 -->
+          <div class="preference-result">
+            <p class="result-text">당신은 [ <span class="highlight">짧은영화매니아</span> ] 입니다</p>
+            <div class="result-boxes">
+              <div class="result-box">
+                <p class="result-label">선호 시간</p>
+                <div class="result-content-box">
+                  <span class="main-text">30분</span>
+                  <span class="sub-text">100점 / 80편</span>
+                </div>
+              </div>
+              <div class="result-box">
+                <p class="result-label">장르</p>
+                <div class="result-content-box">
+                  <span class="main-text">액션</span>
+                  <span class="sub-text">100점 / 50편</span>
+                </div>
+              </div>
+              <div class="result-box">
+                <p class="result-label">국가</p>
+                <div class="result-content-box">
+                  <span class="main-text">한국</span>
+                  <span class="sub-text">100점 / 12편</span>
+                </div>
+              </div>
+              <div class="result-box">
+                <p class="result-label">태그</p>
+                <div class="result-content-box">
+                  <span class="main-text">#숏무비</span>
+                  <span class="sub-text">100점 / 80편</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 하단 -->
+        <div class="service-links">
+          <div class="service-item">
+            <span class="service-title">고객센터</span>
+            <img src="./asset/images/mypage/than.png" alt="화살표" class="arrow-iconn" />
+          </div>
+          <div class="service-item">
+            <span class="service-title">자주 묻는 질문</span>
+            <img src="./asset/images/mypage/than.png" alt="화살표" class="arrow-iconn" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#">회사소개</a></li>
+          <li class="footer__nav-item"><a href="#">서비스 소개</a></li>
+          <li class="footer__nav-item"><a href="#">이용약관</a></li>
+          <li class="footer__nav-item"><a href="#">개인정보 처리방침</a></li>
+          <li class="footer__nav-item"><a href="#">고객센터</a></li>
+          <li class="footer__nav-item"><a href="#">이벤트</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__info">
+        <p class="footer__slogan">A Curation Platform for Short Films</p>
+        <div class="footer__credit-section">
+          <p class="footer__credit">Directed by CINEBITE Team</p>
+          <p class="footer__credit">Developed by Gayeon Park, Minho Lee, Jiwon Moon</p>
+          <p class="footer__credit">Designed by Yurim Lee, Subin Kim</p>
+        </div>
+        <p class="footer__credit">Produced in 2025</p>
+        <div class="footer__credit-section">
+          <p class="footer__credit">CINEBITE Team – Minho Lee, Yurim Lee, Subin Kim, Jiwon Moon, Gayeon Park</p>
+        </div>
+        <div class="footer__credit-section">
+          <p class="footer__copyright">ⓒ 2025 CINEBITE. All rights reserved</p>
+          <p class="footer__notice">본 사이트는 비상업적 목적의 개인 프로젝트로 제작되었습니다.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
