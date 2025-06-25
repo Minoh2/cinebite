@@ -10,13 +10,13 @@
   font-family: var(--font-family-base);
   margin-bottom: 40px;
 }
-#browse h1 {
+/* #browse h1 {
   font-size: 36px;
   font-weight: var(--font-weight-bold);
   font-family: var(--font-family-base);
   padding: 0 160px;
   margin: 14rem 0 6rem;
-}
+} */
 #browse .movie-slider {
   display: flex;
   align-items: center;
