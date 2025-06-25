@@ -85,7 +85,8 @@ const movies = [
     runtime: '92분',
     meta: '2018 / 로맨스 드라마 / 한국',
     rating: 4.5,
-    description: `첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다. 괜찮은 것 같지만 추억과 일상을 써지지 않는 시를 붙잡고 있다.
+    description: `첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다.
+대학교에서 시 수업을 하고, 친구를 만나며 괜찮은 것 같지만 추억과 일상을 써지지 않는 시를 붙잡고 있다.
 “괜찮냐고 묻지 말아 줘…” “자꾸 괜찮냐고 물어보니까. 안 괜찮은데 괜찮다고 말 해야되잖아”`,
     poster: 'asset/images/home_image/best8_1.png',
   },
@@ -94,7 +95,9 @@ const movies = [
     runtime: '100분',
     meta: '2020 / 애니메이션 / 일본',
     rating: 4.0,
-    description: `새까만 연기로 뒤덮인 굴뚝마을에서 하늘을 올려다보지 말 것 이라는 규칙 아래 살아온 소년 루비치. 어느 날, 쓰레기로 만들어진 인형 같은 존재 푸펠과 친구가 되어 함께 진실을 찾기 위한 모험을 떠납니다.`,
+    description: `새까만 연기로 뒤덮인 굴뚝마을에서 하늘을 올려다보지 말 것 이라는 규칙 아래 살아온 소년 루비치가 등장합니다.
+그는 하늘과 별을 믿는 외톨이죠. 어느 날, 쓰레기로 만들어진 인형 같은 존재 푸펠과 친구가 되어 함께 진실을 찾기 위한 모험을 떠납니다.
+이야기는 폐쇄된 사회에서의 꿈과 진실, 우정과 용기에 대한 메시지를 전합니다.`,
     poster: 'asset/images/home_image/best8_2.png',
   },
   {
@@ -197,4 +200,117 @@ thumbnails.forEach((thumb, index) => {
     thumbnails.forEach((t) => t.classList.remove('active'));
     thumb.classList.add('active');
   });
+});
+
+//  video 섹션
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const videos = document.querySelectorAll('video');
+
+  let currentIndex = 2;
+
+  function updateSlides() {
+    slides.forEach((slide, index) => {
+      let relativeIndex = index - currentIndex;
+
+      if (relativeIndex > slides.length / 2) relativeIndex -= slides.length;
+      if (relativeIndex < -slides.length / 2) relativeIndex += slides.length;
+
+      let translateX = relativeIndex * 200;
+      let scale = 1;
+      let opacity = 1;
+      let zIndex = 3;
+
+      if (Math.abs(relativeIndex) === 1) {
+        scale = 0.8;
+        opacity = 0.6;
+        zIndex = 2;
+      } else if (Math.abs(relativeIndex) >= 2) {
+        scale = 0.7;
+        opacity = 0.4;
+        zIndex = 1;
+        translateX = relativeIndex > 0 ? 400 : -400;
+      }
+
+      slide.style.transform = `translateX(${translateX}px) scale(${scale})`;
+      slide.style.opacity = opacity;
+      slide.style.zIndex = zIndex;
+      slide.classList.toggle('active', index === currentIndex);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  function pauseAllVideos() {
+    videos.forEach((video) => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  }
+
+  function playCurrentVideo() {
+    const video = videos[currentIndex];
+    if (video && video.readyState >= 3) {
+      video.currentTime = 0;
+      video.play().catch((e) => {
+        console.log('자동재생 실패:', e);
+      });
+    }
+  }
+
+  function goToSlide(index) {
+    if (index === currentIndex) return;
+    pauseAllVideos();
+    currentIndex = index;
+    updateSlides();
+    setTimeout(() => {
+      playCurrentVideo();
+    }, 400);
+  }
+
+  function nextSlide() {
+    goToSlide((currentIndex + 1) % slides.length);
+  }
+
+  function prevSlide() {
+    goToSlide((currentIndex - 1 + slides.length) % slides.length);
+  }
+
+  // 이벤트 연결
+  nextBtn.addEventListener('click', nextSlide);
+  prevBtn.addEventListener('click', prevSlide);
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
+  slides.forEach((slide, i) =>
+    slide.addEventListener('click', () => goToSlide(i))
+  );
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prevSlide();
+    if (e.key === 'ArrowRight') nextSlide();
+  });
+
+  // 터치 스와이프
+  let startX = 0;
+  let endX = 0;
+
+  document.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  document.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+    if (Math.abs(diff) > 50) {
+      diff > 0 ? nextSlide() : prevSlide();
+    }
+  });
+
+  updateSlides();
+  playCurrentVideo();
 });
