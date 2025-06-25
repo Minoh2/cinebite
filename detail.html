@@ -13,48 +13,6 @@
 
 <body>
 
-    <header>
-        <nav class="nav-bar">
-            <div class="nav-wrapper">
-
-                <!-- 좌측: 로고 + 메뉴 -->
-                <div class="nav-left">
-                    <div class="logo">
-                        <a href="index.html"><img src="asset/images/home_image/logo.png" alt="logo" /></a>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="index.html">홈</a></li>
-                        <li><a href="about.html">소개</a></li>
-                        <li><a href="#">러닝타임</a></li>
-                        <li><a href="#">둘러보기</a></li>
-                        <li><a href="#">보관함</a></li>
-                    </ul>
-                </div>
-
-                <!-- 우측: 검색창 + 알림 + 프로필 + 닉네임 -->
-                <div class="nav-icons">
-                    <div class="search-box">
-                        <form action="/search" method="GET" class="search-wrapper">
-                            <span class="search-icon">🔍</span>
-                            <input type="text" name="q" id="searchInput" required />
-                            <span class="search-hint">찾고 싶은 영화를 검색해보세요</span>
-                            <button type="submit" hidden></button>
-                        </form>
-                    </div>
-
-                    <button class="notification-btn" aria-label="알림">🔔</button>
-
-                    <div class="profile">
-                        <img src="asset/images/home_image/bite123.png" alt="프로필 이미지" />
-                    </div>
-
-                    <span class="nickname">바이트123</span>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
 
     <main id="detail">
         <div class="hero">
@@ -82,7 +40,7 @@
                         <img src="./asset/images/detail/platform2.png" alt="">
                     </div>
                     <div class="m-star">
-                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <img src="./asset/images/detail/star.png" alt="">
                         <h1>3.5</h1>
                     </div>
                 </div>
@@ -123,7 +81,7 @@
                         <p>1,400원</p>
                     </div>
                     <div class="p-box2">
-                        <div><img src="./asset/images/detail/platform1.png" alt=""></div>
+                        <div><img src="./asset/images/detail/platform2.png" alt=""></div>
                         <p class="platform">Apple TV</p>
                         <p>1,400원</p>
                     </div>
@@ -135,12 +93,15 @@
 
 
         <section class="section2">
-            <h1 class="s-title">출연 · 제작</h1>
+            <div class="m-title">
+                <h1 class="s-title">출연 · 제작</h1>
+                <div class="span"><a href=""><span>전체보기</span><span>></span></a></div>
+            </div>
             <div class="box-c">
                 <div class="s-box">
                     <div class="ss-box">
                         <div class="s-img">
-                            <img src="./asset/images/detail/section2_이옥섭.png" alt="">
+                            <a href=""><img src="./asset/images/detail/section2_이옥섭.png" alt=""></a>
                             <div class="txt">
                                 <h2 class="body">이옥섭</h2>
                                 <h3>감독</h3>
@@ -149,7 +110,7 @@
                     </div>
                     <div class="ss-box">
                         <div class="s-img">
-                            <img src="./asset/images/detail/section2_이주영.png" alt="">
+                            <a href=""><img src="./asset/images/detail/section2_이주영.png" alt=""></a>
                             <div class="txt">
                                 <h2 class="body">이주영</h2>
                                 <h3>여운영</h3>
@@ -160,7 +121,7 @@
                 <div class="s-box">
                     <div class="ss-box">
                         <div class="s-img">
-                            <img src="./asset/images/detail/section2_구교환.png" alt="">
+                            <a href=""><img src="./asset/images/detail/section2_구교환.png" alt=""></a>
                             <div class="txt">
                                 <h2 class="body">구교환</h2>
                                 <h3>이성원</h3>
@@ -170,7 +131,7 @@
                     </div>
                     <div class="ss-box">
                         <div class="s-img">
-                            <img src="./asset/images/detail/section2_문소리.png" alt="">
+                            <a href=""><img src="./asset/images/detail/section2_문소리.png" alt=""></a>
                             <div class="txt">
                                 <h2 class="body">문소리</h2>
                                 <h3>이경진</h3>
@@ -181,7 +142,7 @@
                 <div class="s-box">
                     <div class="ss-box">
                         <div class="s-img">
-                            <img src="./asset/images/detail/section2_천우희.png" alt="">
+                            <a href=""><img src="./asset/images/detail/section2_천우희.png" alt=""></a>
                             <div class="txt">
                                 <h2 class="body">천우희</h2>
                                 <h3>메기</h3>
@@ -191,7 +152,7 @@
                     </div>
                     <div class="ss-box">
                         <div class="s-img">
-                            <img src="./asset/images/detail/section2_박경혜.png" alt="">
+                            <a href=""><img src="./asset/images/detail/section2_박경혜.png" alt=""></a>
                             <div class="txt">
                                 <h2 class="body">박경혜</h2>
                                 <h3>방사선사</h3>
@@ -202,7 +163,7 @@
                 <div class="s-box">
                     <div class="ss-box">
                         <div class="s-img">
-                            <img src="./asset/images/detail/section2_윤정재.png" alt="">
+                            <a href=""><img src="./asset/images/detail/section2_윤정재.png" alt=""></a>
                             <div class="txt">
                                 <h2 class="body">윤정재</h2>
                                 <h3>드러머</h3>
@@ -212,7 +173,7 @@
                     </div>
                     <div class="ss-box">
                         <div class="s-img">
-                            <img src="./asset/images/detail/section2_박종환.png" alt="">
+                            <a href=""><img src="./asset/images/detail/section2_박종환.png" alt=""></a>
                             <div class="txt">
                                 <h2 class="body">박종환</h2>
                                 <h3>각그랜져</h3>
@@ -229,7 +190,10 @@
         </section>
         <section class="section3">
             <div class="border2"></div>
-            <h1 class="s-title">감상평</h1>
+            <div class="m-title">
+                <h1 class="s-title">감상평</h1>
+                <div class="span"><a href=""><span>전체보기</span><span>></span></a></div>
+            </div>
             <div class="review-container">
                 <div class="review">
                     <div class="review-star">
@@ -326,7 +290,7 @@
                     <p class="review-date">2025.06.18</p>
                 </div>
                 <div class="btn">
-                    <a href=""><img src="./asset/images/detail/section3_btn.png" alt=""></a>
+                    <img src="./asset/images/detail/section3_btn.png" alt="">
                     <a href="">감상평 더보기</a>
                 </div>
         </section>
@@ -347,12 +311,18 @@
             <h1 class="s-title">예고편</h1>
             <div class="video">
                 <div class="video1">
-                    <img src="./asset/images/detail/section4_video1.png" alt="">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQKA0TI3YjQ?si=AcuIwWtYrctZYLM-"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>메인 예고편</p>
                 </div>
                 <div class="video2">
-                    <img src="./asset/images/detail/section4_video2.png" alt="">
-                    <p>메인 예고편</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rEttKU7vWEY?si=xBzdFVqOD1Y5RhRJ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>티저 예고편</p>
                 </div>
             </div>
         </section>
@@ -393,7 +363,9 @@
                                 <h3>최악의 하루</h3>
                                 <p>93분</p>
                             </div>
-                            <p class="writing">오랫동안 사귄 남자친구 현오(권율)에게는 현실적이고 당찬 '여자친구', 얼마 전에 잠깐 만났던 운철(이희준)에게는 아련한 '첫사랑 같은 그녀' 소설가 료헤이(이와세 료)에게는 여행지에서 만난 '친절하고 다정한 낯선 사람' 오늘 우리는 모두 '은희'(한예리)를 만났다. 모두의 은희에게 찾아온 최악의 하루 과연 그녀의 하루의 끝은 해피엔딩일 수 있을까?</p>
+                            <p class="writing">오랫동안 사귄 남자친구 현오(권율)에게는 현실적이고 당찬 '여자친구', 얼마 전에 잠깐 만났던 운철(이희준)에게는 아련한 '첫사랑
+                                같은 그녀' 소설가 료헤이(이와세 료)에게는 여행지에서 만난 '친절하고 다정한 낯선 사람' 오늘 우리는 모두 '은희'(한예리)를 만났다. 모두의 은희에게
+                                찾아온 최악의 하루 과연 그녀의 하루의 끝은 해피엔딩일 수 있을까?</p>
                         </div>
                     </div>
                     <div class="movie-collection">
@@ -403,7 +375,9 @@
                                 <h3>찬실이는 복도많지</h3>
                                 <p>96분</p>
                             </div>
-                            <p class="writing">“아 망했다. 왜 그리 일만 하고 살았을꼬?”  집도 없고, 남자도 없고, 갑자기 일마저 똑 끊겨버린 영화 프로듀서 ‘찬실’. 현생은 망했다 싶지만, 친한 배우 ‘소피’네 가사도우미로 취직해 살길을 도모한다. 그런데 ‘소피’의 불어 선생님 ‘영’이 누나 마음을 설레게 하더니 장국영이라 우기는 비밀스런 남자까지 등장! 새로 이사간 집주인 할머니도 정이 넘쳐 흐른다. 평생 일복만 터져왔는데, 영화를 그만두니 전에 없던 ‘복’도 들어오는 걸까?</p>
+                            <p class="writing">“아 망했다. 왜 그리 일만 하고 살았을꼬?” 집도 없고, 남자도 없고, 갑자기 일마저 똑 끊겨버린 영화 프로듀서 ‘찬실’. 현생은
+                                망했다 싶지만, 친한 배우 ‘소피’네 가사도우미로 취직해 살길을 도모한다. 그런데 ‘소피’의 불어 선생님 ‘영’이 누나 마음을 설레게 하더니 장국영이라 우기는
+                                비밀스런 남자까지 등장! 새로 이사간 집주인 할머니도 정이 넘쳐 흐른다. 평생 일복만 터져왔는데, 영화를 그만두니 전에 없던 ‘복’도 들어오는 걸까?</p>
                         </div>
                     </div>
                 </div>
@@ -428,7 +402,9 @@
                                 <h3>연애다큐</h3>
                                 <p>39분</p>
                             </div>
-                            <p class="writing">구교환과 이하나는 연인이다. 돈벌이가 변변치 않은 이 연인은 사전제작지원금 500만원에 눈멀어 자신들의 셀프연애다큐멘터리 <프로젝트명 : 러브(LOVE)>를 기획한다. 하지만 돌연 성격과 예술성 취향 등의 차이로 헤어지게 된다. </p>
+                            <p class="writing">구교환과 이하나는 연인이다. 돈벌이가 변변치 않은 이 연인은 사전제작지원금 500만원에 눈멀어 자신들의 셀프연애다큐멘터리
+                                <프로젝트명 : 러브(LOVE)>를 기획한다. 하지만 돌연 성격과 예술성 취향 등의 차이로 헤어지게 된다.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -436,37 +412,6 @@
         </section>
     </main>
 
-
-
-    <footer class="footer">
-        <div class="footer__nav">
-            <ul class="footer__nav-list">
-                <li class="footer__nav-item"><a href="#">회사소개</a></li>
-                <li class="footer__nav-item"><a href="#">서비스 소개</a></li>
-                <li class="footer__nav-item"><a href="#">이용약관</a></li>
-                <li class="footer__nav-item"><a href="#">개인정보 처리방침</a></li>
-                <li class="footer__nav-item"><a href="#">고객센터</a></li>
-                <li class="footer__nav-item"><a href="#">이벤트</a></li>
-            </ul>
-        </div>
-
-        <div class="footer__info">
-            <p class="footer__slogan">A Curation Platform for Short Films</p>
-            <div class="footer__credit-section">
-                <p class="footer__credit">Directed by CINEBITE Team</p>
-                <p class="footer__credit">Developed by Gayeon Park, Minho Lee, Jiwon Moon</p>
-                <p class="footer__credit">Designed by Yurim Lee, Subin Kim</p>
-            </div>
-            <p class="footer__credit">Produced in 2025</p>
-            <div class="footer__credit-section">
-                <p class="footer__credit">CINEBITE Team – Minho Lee, Yurim Lee, Subin Kim, Jiwon Moon, Gayeon Park</p>
-            </div>
-            <div class="footer__credit-section">
-                <p class="footer__copyright">ⓒ 2025 CINEBITE. All rights reserved</p>
-                <p class="footer__notice">본 사이트는 비상업적 목적의 개인 프로젝트로 제작되었습니다.</p>
-            </div>
-        </div>
-    </footer>
 
 
 
