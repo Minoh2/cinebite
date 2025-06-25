@@ -12,12 +12,16 @@
   --font-family-logo: 'Montserrat Alternates', sans-serif;
 
   /* 폰트 크기 */
-  --font-size-heading: 3.2rem;
+  /* --font-size-heading: 3.2rem;
   --font-size-xl: 2.4rem;
   --font-size-lg: 2rem;
   --font-size-md: 1.8rem;
-  --font-size-sm: 1.6rem;
-
+  --font-size-sm: 1.6rem; */
+  --font-size-heading: 2.8rem;
+  --font-size-xl: 2.2rem;
+  --font-size-lg: 1.6rem;
+  --font-size-md: 1.4rem;
+  --font-size-sm: 1.2rem;
   /* 폰트 굵기 */
   --font-weight-medium: 400;
   --font-weight-semibold: 600;
