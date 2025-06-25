@@ -1,73 +1,73 @@
-
-#browse section{
-    margin: 0 auto;
-    max-width: 1600px;
-    margin-top: 8rem;
-    position: relative;
+#browse section {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+  padding: 0 160px 90px;
 }
-#browse h2{
-    font-size: var(--font-size-heading);
-    font-weight: var(--font-weight-bold);
-    font-family: var(--font-family-base);
-    margin-bottom: 40px;
+#browse h2 {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-base);
+  margin-bottom: 40px;
 }
-#browse h1{
-    font-size: 40px;
-    font-weight: var(--font-weight-bold);
-    font-family: var(--font-family-base);
-    margin-left: 15rem;
-    margin-top: 6rem;
+#browse h1 {
+  font-size: 36px;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-base);
+  padding: 0 160px;
+  margin: 14rem 0 6rem;
 }
 #browse .movie-slider {
   display: flex;
   align-items: center;
+  position: relative;
 }
 #browse .movie-track {
   display: flex;
-  gap: 75px;
+  gap: 64px;
   position: relative;
   overflow-x: auto;
   scrollbar-width: none;
 }
 #browse .movie-card {
-  flex: 0 0 260px;
+  flex: 0 0 250px;
   text-align: center;
   align-items: center;
-    display: flex;
+  display: flex;
   flex-direction: column;
 }
-#browse img{
-    width: 100%;
+#browse img {
+  width: 100%;
 }
-#browse .rating{
-    color: var( --color-gray-300);
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-bold);
-    margin-top: 6px;
-    display: flex;
-    align-items: center;
+#browse .rating {
+  color: var(--color-gray-300);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
 }
-#browse .rating span{
-    color: var( --color-secondary);
+#browse .rating span {
+  color: var(--color-secondary);
 }
-#browse .rating .star{
-    width: 16px;
-    height: 16px;
-    margin-right: 7px;
+#browse .rating .star {
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
 }
-#browse .rating .stroke{
-    width: 2px;
-    height: 12px;
-    margin: auto 20px;
+#browse .rating .stroke {
+  width: 2px;
+  height: 12px;
+  margin: auto 20px;
 }
-#browse .title{
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-medium);
-    margin-top: 2rem;
+#browse .title {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  margin-top: 2rem;
 }
-#browse .slide-btn.prev{
+#browse .slide-btn.prev {
   background-color: var(--color-primary);
   border: none;
   color: white;
@@ -78,11 +78,10 @@
   cursor: pointer;
   z-index: 10;
   position: absolute;
-  top: 50%;
+  top: 36%;
   left: -2.5rem;
-    transform: translateY(-50%);
 }
-#browse .slide-btn.next{
+#browse .slide-btn.next {
   background-color: var(--color-primary);
   border: none;
   color: white;
@@ -93,13 +92,12 @@
   cursor: pointer;
   z-index: 10;
   position: absolute;
-  top: 50%;
+  top: 36%;
   right: -2.5rem;
-  transform: translateY(-50%);
 }
-#browse i{
-    width: 100%;
-    color: var(--color-bg);
+#browse i {
+  width: 100%;
+  color: var(--color-bg);
 }
 #brows .prev {
   margin-right: 1rem;

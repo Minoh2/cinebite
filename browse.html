@@ -1,349 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/browse.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/browse.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-wrapper">
+          <!-- 좌측: 로고 + 메뉴 -->
+          <div class="nav-left">
+            <div class="logo">
+              <a href="index.html"><img src="asset/images/logo-primary.svg" alt="logo" /><span class="logo-text">cinebite</span></a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="index.html">홈</a></li>
+              <li><a href="about.html">소개</a></li>
+              <li><a href="#">러닝타임</a></li>
+              <li><a href="browse.html">둘러보기</a></li>
+              <li><a href="#">보관함</a></li>
+            </ul>
+          </div>
+
+          <!-- 우측: 검색창 + 알림 + 프로필 + 닉네임 -->
+          <div class="nav-icons">
+            <div class="search-box">
+              <form action="/search" method="GET" class="search-wrapper">
+                <span class="search-icon"><img src="asset/images/home_image/icon_search.png" alt="" /></span>
+                <input type="text" name="q" id="searchInput" required />
+                <span class="search-hint">찾고 싶은 영화를 검색해보세요</span>
+                <button type="submit" hidden></button>
+              </form>
+            </div>
+
+            <button class="notification-btn" aria-label="알림"><img src="asset/images/home_image/icon_bell.png" alt="" /></button>
+
+            <div class="profile">
+              <div class="profile__img-box">
+                <img src="asset/images/home_image/bite123.png" alt="프로필 이미지" />
+              </div>
+              <span class="nickname">바이트123</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main id="browse">
-        <h1>둘러보기</h1>
-        <section class="rainy-movie">
-            <h2>비 오는 날, 창밖 보며 보기 좋은 영화 🌧️</h2>
-            <div class="movie-slider">
-                <button class="slide-btn prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <div class="movie-track">
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-1.png" alt="4월 이야기">
-                        <p class="title">4월 이야기</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>2.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">67분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-2.png" alt="미드나잇 인 파리">
-                        <p class="title">미드나잇 인 파리</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">94분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-3.png" alt="쉘부르의 우산">
-                        <p class="title">쉘부르의 우산</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">91</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-4.png" alt="연애의 정원">
-                        <p class="title">연애의 정원</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">46분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-5.png" alt="더 테이블">
-                        <p class="title">더 테이블</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">70분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-6.png" alt="유령신부">
-                        <p class="title">유령신부</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">77분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-7.png" alt="줄무늬 파자마를 입은 소년">
-                        <p class="title">줄무늬 파자마를 입은 소년</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">94분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-8.png" alt="더 문">
-                        <p class="title">더 문</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">97분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-9.png" alt="로제타">
-                        <p class="title">로제타</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">95분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image1-10.png" alt="이웃집 토토로">
-                        <p class="title">이웃집 토토로</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">88분</p>
-                    </div>
-                </div>
-                <button class="slide-btn next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
+      <h1>둘러보기</h1>
+      <section class="rainy-movie">
+        <h2>비 오는 날, 창밖 보며 보기 좋은 영화 🌧️</h2>
+        <div class="movie-slider">
+          <button class="slide-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="movie-track">
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-1.png" alt="4월 이야기" />
+              <p class="title">4월 이야기</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>2.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />67분
+              </p>
             </div>
-        </section>     
-        <section class="peace-movie">
-            <h2>마음이 복잡할 때, 조용히 위로해주는 영화 🧘‍♂️</h2>
-            <div class="movie-slider">
-                <button class="slide-btn prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <div class="movie-track">
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-1.png" alt="일루셔니스트">
-                        <p class="title">일루셔니스트</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">88분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-2.png" alt="스틸라이프">
-                        <p class="title">스틸라이프</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">93분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-3.png" alt="쁘띠마망">
-                        <p class="title">쁘띠마망</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">73분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-4.png" alt="콩나물">
-                        <p class="title">콩나물</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">18분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-5.png" alt="비홀드 마이 하트">
-                        <p class="title">비홀드 마이 하트</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">81분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-6.png" alt="프란시스 하">
-                        <p class="title">프란시스 하</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">86분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-7.png" alt="언 애듀케이션">
-                        <p class="title">언 애듀케이션</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">95분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-8.png" alt="몬스터 주식회사">
-                        <p class="title">몬스터 주식회사</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">93분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-9.png" alt="시간을 달리는 소녀">
-                        <p class="title">시간을 달리는 소녀</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">97분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image2-10.png" alt="곰돌이 푸">
-                        <p class="title">곰돌이 푸</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">69분</p>
-                    </div>
-                </div>
-                <button class="slide-btn next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-2.png" alt="미드나잇 인 파리" />
+              <p class="title">미드나잇 인 파리</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />94분
+              </p>
             </div>
-        </section>
-        <section class="friend-movie">
-            <h2> 친구랑 같이 보면 찐으로 웃긴 영화 😆</h2>
-            <div class="movie-slider">
-                <button class="slide-btn prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <div class="movie-track">
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-1.png" alt="퀸카로 살아남는 법">
-                        <p class="title">퀸카로 살아남는 법</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">97분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-2.png" alt="클루리스">
-                        <p class="title">클루리스</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">97분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-3.png" alt="어쩌다 로맨스">
-                        <p class="title">어쩌다 로맨스</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">88분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-4.png" alt="번 애프터 리딩">
-                        <p class="title">번 애프터 리딩</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">95분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-5.png" alt="배드 트립">
-                        <p class="title">배드 트립</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">85분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-6.png" alt="굿바이 마이 프렌드">
-                        <p class="title">굿바이 마이 프렌드</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">97분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-7.png" alt="브리짓 존슨의 일기">
-                        <p class="title">브리짓 존슨의 일기</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">97분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-8.png" alt="쿵푸팬더2">
-                        <p class="title">쿵푸팬더2</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>2.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">67분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-9.png" alt="마다가스카2">
-                        <p class="title">마다가스카2</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">89분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image3-10.png" alt="막걸리가 알려줄거야">
-                        <p class="title">막걸리가 알려줄거야</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.5</span><img class="stroke" src="asset/images/browse/Vect r 27 (Stroke).png" alt="">91분</p>
-                    </div>
-                </div>
-                <button class="slide-btn next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-3.png" alt="쉘부르의 우산" />
+              <p class="title">쉘부르의 우산</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />91분
+              </p>
             </div>
-        </section>
-         <section class="oask-movie">
-            <h2>오스카 수상 단편 애니메이션 🏆</h2>
-            <div class="movie-slider">
-                <button class="slide-btn prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <div class="movie-track">
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-1.png" alt="피스트">
-                        <p class="title">피스트</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>2.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">06분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-2.png" alt="페이퍼맨">
-                        <p class="title">페이퍼맨</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">07분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-3.png" alt="아버지와 딸">
-                        <p class="title">아버지와 딸</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">08분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-4.png" alt="더 로스트 씽">
-                        <p class="title">더 로스트 씽</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">15분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-5.png" alt="덴마크 시인">
-                        <p class="title">덴마크 시인</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">14분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-6.png" alt="미스터 허블렛">
-                        <p class="title">미스터 허블렛</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">11분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-7.png" alt="소년과 두더지와 여우와 말">
-                        <p class="title">소년과 두더지와 여우와 말</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">34분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-8.png" alt="혹시 내게 무슨일이 생기면">
-                        <p class="title">혹시 내게 무슨일이 생기면</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">13분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-9.png" alt="헤어 러브">
-                        <p class="title">헤어 러브</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">07분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image4-10.png" alt="바오">
-                        <p class="title">바오</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">08분</p>
-                    </div>
-                </div>
-                <button class="slide-btn next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-4.png" alt="연애의 정원" />
+              <p class="title">연애의 정원</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />46분
+              </p>
             </div>
-        </section>
-        <section class="rainy-movie">
-            <h2>어른들을 위한 동화 같은 영화 👑</h2>
-            <div class="movie-slider">
-                <button class="slide-btn prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <div class="movie-track">
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-1.png" alt="그렌드 부다페스트 호텔">
-                        <p class="title">그렌드 부다페스트 호텔</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">99분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-2.png" alt="무드 인디고">
-                        <p class="title">무드 인디고</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">95분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-3.png" alt="문라이즈 킹덤">
-                        <p class="title">문라이즈 킹덤</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">96분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-4.png" alt="앙리 앙리">
-                        <p class="title">앙리 앙리</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">99분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-5.png" alt="이프!">
-                        <p class="title">이프!</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">80분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-6.png" alt="동몽가연">
-                        <p class="title">동몽가연</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">93분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-7.png" alt="500일의 썸머">
-                        <p class="title">500일의 썸머</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>4.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">95분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-8.png" alt="파프리카">
-                        <p class="title">파프리카</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.5</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">90분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-9.png" alt="프랭크">
-                        <p class="title">프랭크</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">95분</p>
-                    </div>
-                    <div class="movie-card">
-                        <img src="asset/images/browse/image5-10.png" alt="프린세스 브라이드">
-                        <p class="title">프린세스 브라이드</p>
-                        <p class="rating"><img class="star" src="asset/images/browse/Vector.png" alt=""><span>3.0</span><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="">98분</p>
-                    </div>
-                </div>
-                <button class="slide-btn next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-5.png" alt="더 테이블" />
+              <p class="title">더 테이블</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />70분
+              </p>
             </div>
-        </section>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-6.png" alt="유령신부" />
+              <p class="title">유령신부</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />77분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-7.png" alt="줄무늬 파자마를 입은 소년" />
+              <p class="title">줄무늬 파자마를 입은 소년</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />94분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-8.png" alt="더 문" />
+              <p class="title">더 문</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />97분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-9.png" alt="로제타" />
+              <p class="title">로제타</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />95분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image1-10.png" alt="이웃집 토토로" />
+              <p class="title">이웃집 토토로</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />88분
+              </p>
+            </div>
+          </div>
+          <button class="slide-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="peace-movie">
+        <h2>마음이 복잡할 때, 조용히 위로해주는 영화 🧘‍♂️</h2>
+        <div class="movie-slider">
+          <button class="slide-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="movie-track">
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-1.png" alt="일루셔니스트" />
+              <p class="title">일루셔니스트</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />88분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-2.png" alt="스틸라이프" />
+              <p class="title">스틸라이프</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />93분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-3.png" alt="쁘띠마망" />
+              <p class="title">쁘띠마망</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />73분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-4.png" alt="콩나물" />
+              <p class="title">콩나물</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />18분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-5.png" alt="비홀드 마이 하트" />
+              <p class="title">비홀드 마이 하트</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />81분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-6.png" alt="프란시스 하" />
+              <p class="title">프란시스 하</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />86분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-7.png" alt="언 애듀케이션" />
+              <p class="title">언 애듀케이션</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />95분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-8.png" alt="몬스터 주식회사" />
+              <p class="title">몬스터 주식회사</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />93분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-9.png" alt="시간을 달리는 소녀" />
+              <p class="title">시간을 달리는 소녀</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />97분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image2-10.png" alt="곰돌이 푸" />
+              <p class="title">곰돌이 푸</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />69분
+              </p>
+            </div>
+          </div>
+          <button class="slide-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="friend-movie">
+        <h2>친구랑 같이 보면 찐으로 웃긴 영화 😆</h2>
+        <div class="movie-slider">
+          <button class="slide-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="movie-track">
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-1.png" alt="퀸카로 살아남는 법" />
+              <p class="title">퀸카로 살아남는 법</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />97분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-2.png" alt="클루리스" />
+              <p class="title">클루리스</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />97분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-3.png" alt="어쩌다 로맨스" />
+              <p class="title">어쩌다 로맨스</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />88분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-4.png" alt="번 애프터 리딩" />
+              <p class="title">번 애프터 리딩</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />95분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-5.png" alt="배드 트립" />
+              <p class="title">배드 트립</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />85분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-6.png" alt="굿바이 마이 프렌드" />
+              <p class="title">굿바이 마이 프렌드</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />97분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-7.png" alt="브리짓 존슨의 일기" />
+              <p class="title">브리짓 존슨의 일기</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />97분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-8.png" alt="쿵푸팬더2" />
+              <p class="title">쿵푸팬더2</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>2.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />67분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-9.png" alt="마다가스카2" />
+              <p class="title">마다가스카2</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />89분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image3-10.png" alt="막걸리가 알려줄거야" />
+              <p class="title">막걸리가 알려줄거야</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.5</span
+                ><img class="stroke" src="asset/images/browse/Vect r 27 (Stroke).png" alt="" />91분
+              </p>
+            </div>
+          </div>
+          <button class="slide-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="oask-movie">
+        <h2>오스카 수상 단편 애니메이션 🏆</h2>
+        <div class="movie-slider">
+          <button class="slide-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="movie-track">
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-1.png" alt="피스트" />
+              <p class="title">피스트</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>2.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />06분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-2.png" alt="페이퍼맨" />
+              <p class="title">페이퍼맨</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />07분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-3.png" alt="아버지와 딸" />
+              <p class="title">아버지와 딸</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />08분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-4.png" alt="더 로스트 씽" />
+              <p class="title">더 로스트 씽</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />15분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-5.png" alt="덴마크 시인" />
+              <p class="title">덴마크 시인</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />14분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-6.png" alt="미스터 허블렛" />
+              <p class="title">미스터 허블렛</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />11분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-7.png" alt="소년과 두더지와 여우와 말" />
+              <p class="title">소년과 두더지와 여우와 말</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />34분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-8.png" alt="혹시 내게 무슨일이 생기면" />
+              <p class="title">혹시 내게 무슨일이 생기면</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />13분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-9.png" alt="헤어 러브" />
+              <p class="title">헤어 러브</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />07분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image4-10.png" alt="바오" />
+              <p class="title">바오</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />08분
+              </p>
+            </div>
+          </div>
+          <button class="slide-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="rainy-movie">
+        <h2>어른들을 위한 동화 같은 영화 👑</h2>
+        <div class="movie-slider">
+          <button class="slide-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="movie-track">
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-1.png" alt="그렌드 부다페스트 호텔" />
+              <p class="title">그렌드 부다페스트 호텔</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />99분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-2.png" alt="무드 인디고" />
+              <p class="title">무드 인디고</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />95분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-3.png" alt="문라이즈 킹덤" />
+              <p class="title">문라이즈 킹덤</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />96분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-4.png" alt="앙리 앙리" />
+              <p class="title">앙리 앙리</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />99분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-5.png" alt="이프!" />
+              <p class="title">이프!</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />80분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-6.png" alt="동몽가연" />
+              <p class="title">동몽가연</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />93분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-7.png" alt="500일의 썸머" />
+              <p class="title">500일의 썸머</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>4.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />95분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-8.png" alt="파프리카" />
+              <p class="title">파프리카</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.5</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />90분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-9.png" alt="프랭크" />
+              <p class="title">프랭크</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />95분
+              </p>
+            </div>
+            <div class="movie-card">
+              <img src="asset/images/browse/image5-10.png" alt="프린세스 브라이드" />
+              <p class="title">프린세스 브라이드</p>
+              <p class="rating">
+                <img class="star" src="asset/images/browse/Vector.png" alt="" /><span>3.0</span
+                ><img class="stroke" src="asset/images/browse/Vector 27 (Stroke).png" alt="" />98분
+              </p>
+            </div>
+          </div>
+          <button class="slide-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
     </main>
     <script>
-    document.querySelectorAll('.slide-btn').forEach(button => {
+      document.querySelectorAll('.slide-btn').forEach((button) => {
         button.addEventListener('click', () => {
-            const track = button.closest('.movie-slider').querySelector('.movie-track');
-            const card = track.querySelector('.movie-card');
-            const cardWidth = card.offsetWidth + 75; // 카드 간 간격 포함
-            const isPrev = button.classList.contains('prev');
-            const direction = isPrev ? -1 : 1;
+          const track = button.closest('.movie-slider').querySelector('.movie-track');
+          const card = track.querySelector('.movie-card');
+          const cardWidth = card.offsetWidth + 75; // 카드 간 간격 포함
+          const isPrev = button.classList.contains('prev');
+          const direction = isPrev ? -1 : 1;
 
-            track.scrollBy({
+          track.scrollBy({
             left: cardWidth * direction,
-            behavior: 'smooth'
-            });
+            behavior: 'smooth',
+          });
         });
-        });
+      });
     </script>
-</body>
+  </body>
+  <footer class="footer">
+    <div class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"><a href="#">회사소개</a></li>
+        <li class="footer__nav-item"><a href="#">서비스 소개</a></li>
+        <li class="footer__nav-item"><a href="#">이용약관</a></li>
+        <li class="footer__nav-item"><a href="#">개인정보 처리방침</a></li>
+        <li class="footer__nav-item"><a href="#">고객센터</a></li>
+        <li class="footer__nav-item"><a href="#">이벤트</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__info">
+      <p class="footer__slogan">A Curation Platform for Short Films</p>
+      <div class="footer__credit-section">
+        <p class="footer__credit">Directed by CINEBITE Team</p>
+        <p class="footer__credit">Developed by Gayeon Park, Minho Lee, Jiwon Moon</p>
+        <p class="footer__credit">Designed by Yurim Lee, Subin Kim</p>
+      </div>
+      <p class="footer__credit">Produced in 2025</p>
+      <div class="footer__credit-section">
+        <p class="footer__credit">CINEBITE Team – Minho Lee, Yurim Lee, Subin Kim, Jiwon Moon, Gayeon Park</p>
+      </div>
+      <div class="footer__credit-section">
+        <p class="footer__copyright">ⓒ 2025 CINEBITE. All rights reserved</p>
+        <p class="footer__notice">본 사이트는 비상업적 목적의 개인 프로젝트로 제작되었습니다.</p>
+      </div>
+    </div>
+  </footer>
 </html>
