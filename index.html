@@ -258,47 +258,74 @@
         </div>
       </section>
       <section class="trailer-section">
-        <!-- 🔹 상단 타이틀과 뱃지 -->
-        <div class="trailer-header">
-          <h2><span class="highlight">예고편</span>으로 골라보기</h2>
-          <div class="ai-badge">AI 추천 기반</div>
-        </div>
-        <!-- 🔸 예고편 카드들 -->
-        <div class="trailer-cards">
-          <div class="trailer-card left2">
-            <img src="asset/images/home_image/video1.png" alt="예고편 1" />
-            <div class="trailer-info">
-              <p class="trailer-title">영화 제목</p>
-              <p class="trailer-runtime">90분</p>
+        <div class="container">
+          <div class="trailer-title-wrap">
+            <h2 class="title">예고편으로 골라보기</h2>
+            <p class="subtitle">AI 추천 기반</p>
+          </div>
+
+          <div class="slider-container" id="sliderContainer">
+            <div class="slide active" data-index="0">
+              <video muted>
+                <source src="asset/images/home_image/video/video.mp4" type="video/mp4" />
+              </video>
+              <div class="slide-overlay">
+                <div class="slide-title">인사이드 아웃</div>
+                <div class="slide-duration">90분</div>
+              </div>
+            </div>
+
+            <div class="slide" data-index="1">
+              <video muted>
+                <source src="asset/images/home_image/video/video.mp4" type="video/mp4" />
+              </video>
+              <div class="slide-overlay">
+                <div class="slide-title">이터널 선샤인</div>
+                <div class="slide-duration">87분</div>
+              </div>
+            </div>
+
+            <div class="slide" data-index="2">
+              <video muted>
+                <source src="asset/images/home_image/video/video.mp4" type="video/mp4" />
+              </video>
+              <div class="slide-overlay">
+                <div class="slide-title">패터슨</div>
+                <div class="slide-duration">75분</div>
+              </div>
+            </div>
+
+            <div class="slide" data-index="3">
+              <video muted>
+                <source src="asset/images/home_image/video/vidio1.mp4" type="video/mp4" />
+              </video>
+              <div class="slide-overlay">
+                <div class="slide-title">드래곤 길들이기</div>
+                <div class="slide-duration">125분</div>
+              </div>
+            </div>
+
+            <div class="slide" data-index="4">
+              <video muted>
+                <source src="asset/images/home_image/video/video.mp4" type="video/mp4" />
+              </video>
+              <div class="slide-overlay">
+                <div class="slide-title">밤쉘</div>
+                <div class="slide-duration">85분</div>
+              </div>
             </div>
           </div>
-          <div class="trailer-card left1">
-            <img src="asset/images/home_image/video1.png" alt="예고편 2" />
-            <div class="trailer-info">
-              <p class="trailer-title">영화 제목</p>
-              <p class="trailer-runtime">87분</p>
+
+          <div class="controls">
+            <button class="nav-btn" id="prevBtn">‹</button>
+            <div class="dots" id="dots">
+              <div class="dot active" data-index="0"></div>
+              <div class="dot" data-index="1"></div>
+              <div class="dot" data-index="2"></div>
+              <div class="dot" data-index="3"></div>
+              <div class="dot" data-index="4"></div>
             </div>
-          </div>
-          <div class="trailer-card center">
-            <img src="asset/images/home_image/video1.png" alt="예고편 3" />
-            <div class="trailer-info">
-              <p class="trailer-title">영화 제목</p>
-              <p class="trailer-runtime">75분</p>
-            </div>
-          </div>
-          <div class="trailer-card right1">
-            <img src="asset/images/home_image/video1.png" alt="예고편 4" />
-            <div class="trailer-info">
-              <p class="trailer-title">영화 제목</p>
-              <p class="trailer-runtime">92분</p>
-            </div>
-          </div>
-          <div class="trailer-card right2">
-            <img src="asset/images/home_image/video1.png" alt="예고편 5" />
-            <div class="trailer-info">
-              <p class="trailer-title">영화 제목</p>
-              <p class="trailer-runtime">85분</p>
-            </div>
+            <button class="nav-btn" id="nextBtn">›</button>
           </div>
         </div>
       </section>

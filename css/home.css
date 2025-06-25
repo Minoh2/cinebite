@@ -52,7 +52,7 @@
 .nav-links li a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   transition: color 0.3s;
 }
 
@@ -373,20 +373,6 @@
   font-size: 1rem;
 } */
 
-/* 🔹 더 보러 가기 버튼 */
-.more-button {
-  background-color: var(--color-primary);
-  color: #212121;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 5rem;
-  cursor: pointer;
-  margin: 1rem auto;
-  display: inline-block;
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-lg);
-}
-
 /* top 8 section */
 .top8-section {
   background-color: var(--color-bg);
@@ -698,140 +684,129 @@
 
 .trailer-section {
   position: relative;
+  padding: 8rem 0;
 }
 
-/* 🔹 타이틀 & 뱃지 중앙 정렬 */
-.trailer-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; /* 이 줄이 핵심입니다 */
+.trailer-title-wrap {
+  text-align: center;
   margin-bottom: 4rem;
 }
 
-.trailer-header h2 {
+.trailer-title-wrap .title {
   font-size: var(--font-size-heading);
+  background: var(--color-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: var(--font-weight-bold);
+}
+
+.trailer-title-wrap .subtitle {
+  margin-top: 1.2rem;
+  font-size: var(--font-size-md);
   color: var(--color-text);
+  opacity: 0.7;
+  border: 1px solid var(--color-gray-300);
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 100px;
 }
 
-.trailer-header .highlight {
-  color: var(--color-primary);
-}
-
-.heading {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-heading);
-  text-align: center;
-}
-
-.trailer-section {
+.slider-container {
   position: relative;
-  padding: 8rem 0;
-  max-width: 1600px;
+  height: 400px;
+  max-width: 1400px;
   margin: 0 auto;
-}
-
-.trailer-cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  perspective: 1000px;
 }
 
-.trailer-card {
-  position: relative;
+.slide {
+  position: absolute;
+  width: 600px;
+  height: 380px;
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.trailer-card img {
-  display: block;
+.slide video {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
-.trailer-info {
+.slide-overlay {
   position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
-  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  padding: 20px;
+  text-align: center;
 }
 
-.trailer-title {
-  font-size: var(--font-size-heading);
-  font-weight: var(--font-weight-bold);
+.slide-title {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-.trailer-runtime {
-  font-size: var(--font-size-lg);
-  margin-top: 0.2rem;
+.slide-duration {
+  font-size: 1.2rem;
+  color: var(--primary-color, #00d4ff);
+  margin-top: 0.4rem;
 }
 
-/* 크기 및 위치 조정 */
-.center {
-  width: 38rem;
-  z-index: 3;
-  transform: scale(1);
-}
-.left1,
-.right1 {
-  width: 28rem;
-  z-index: 2;
-  transform: scale(0.85);
-}
-.left2,
-.right2 {
-  width: 20rem;
-  z-index: 1;
-  transform: scale(0.7);
+.controls {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-/* 위치 보정용 margin 또는 translate 조절 가능 */
-.left2 {
-  margin-right: -6rem;
-}
-.left1 {
-  margin-right: -4rem;
-}
-.right1 {
-  margin-left: -4rem;
-}
-.right2 {
-  margin-left: -6rem;
-}
-
-.trailer-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3rem;
-  height: 3rem;
-  background-size: contain;
-  background-repeat: no-repeat;
+.nav-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-text);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
 }
 
-.left-arrow {
-  left: 1rem;
-  background-image: url('asset/image/icons/arrow-left.png');
-}
-.right-arrow {
-  right: 1rem;
-  background-image: url('asset/image/icons/arrow-right.png');
+.nav-btn:hover {
+  background-color: rgba(9, 210, 210, 0.3);
+  border-color: var(--color-primary);
+  transform: scale(1.1);
 }
 
-.ai-badge {
-  margin-top: 1.2rem;
-  padding: 0.6rem 1.6rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 9999px;
-  font-size: var(--font-size-sm);
-  font-weight: 500;
-  color: var(--primary-color);
-  background-color: rgba(255, 255, 255, 0.05);
+.dots {
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--color-primary);
+  transform: scale(1.3);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
 }
 
 /* 이하 계단식 카드 배치는 이전과 동일 */
