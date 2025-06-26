@@ -9,40 +9,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  padding-top: 8rem; /* nav-bar 높이 만큼 여백 줌 */
   overflow: hidden;
-}
-
-/* ✅ 배경 이미지 */
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 화면에 꽉 채우되 잘릴 수 있음 */
-  object-position: center top; /* 위쪽 기준으로 정렬 */
-  z-index: -1;
-}
-
-/* ✅ 인사이드 아웃 텍스트 이미지 */
-.hero-text {
-  position: absolute;
-  top: 14rem;
-  left: 0;
-  width: 100%;
-  padding: 0 16rem;
-}
-
-.hero-text img {
-  max-width: 60rem; /* 원하는 크기로 조절 */
-  height: auto;
-}
-
-/* 인사이드 아웃 로고 */
-.hero-title {
-  max-width: 40rem;
-  height: auto;
 }
 
 /* ✅ 로고 아래 4rem 간격으로 붙는 정보 섹션 */
@@ -759,4 +726,46 @@
   .search-box {
     display: none;
   }
+}
+
+.banner-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.banner .text-img {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.banner .character-img {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+#banner1 {
+  background-image: url('../asset/images/home_image/hero/insideout_bg.png');
+  padding: 0 120px;
+}
+#banner2 {
+  background-image: url('../asset/images/home_image/hero/night-fishing_bg.png');
+  padding: 0 120px;
 }

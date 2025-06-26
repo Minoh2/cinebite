@@ -1,3 +1,33 @@
+const banners = document.querySelectorAll('.banner');
+
+let current = 0;
+
+function showBanner(index) {
+  const banner = banners[index];
+  const text = banner.querySelector('.text-img');
+  const character = banner.querySelector('.character-img');
+
+  gsap.set(banner, { opacity: 0, pointerEvents: 'auto' });
+  gsap.to(banner, { opacity: 1, duration: 1 });
+
+  gsap.to(text, { x: 0, opacity: 1, delay: 1, duration: 1, ease: 'power2.out' });
+
+  gsap.to(character, { x: 0, opacity: 1, delay: 2, duration: 1, ease: 'power2.out' });
+
+  gsap.delayedCall(5, () => {
+    gsap.to(banner, { opacity: 0, duration: 1 });
+    gsap.to(text, { x: -200, opacity: 0, duration: 1 });
+    gsap.to(character, { x: 200, opacity: 0, duration: 1 });
+
+    gsap.delayedCall(1.2, () => {
+      current = (index + 1) % banners.length;
+      showBanner(current);
+    });
+  });
+}
+
+showBanner(current);
+
 // 🎬 [1] 필터 섹션: 슬라이더 값에 따라 영화 카드 변경
 
 const slider = document.getElementById('runtimeSlider');
