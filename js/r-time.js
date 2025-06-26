@@ -12,7 +12,7 @@ function displayMovies(movies) {
   }
 
   movies.forEach((movie) => {
-    const formattedRuntime = String(movie.runtime).padStart(2, '0');
+    const formattedRuntime = String(movie.runningtime).padStart(2, '0');
     const movieCardHTML = `
       <div class="box">
           <a href="#">
@@ -46,7 +46,7 @@ function updateMovieList() {
   const maxRuntime = parseInt(slider.value, 10);
   sliderValue.textContent = maxRuntime;
 
-  const filteredMovies = allMovies.filter((movie) => movie.runtime <= maxRuntime).sort((a, b) => b.runtime - a.runtime);
+  const filteredMovies = allMovies.filter((movie) => movie.runningtime <= maxRuntime).sort((a, b) => b.runningtime - a.runningtime);
 
   displayMovies(filteredMovies);
 }
@@ -56,7 +56,7 @@ function updateMovieList() {
  */
 async function initializeApp() {
   try {
-    const response = await fetch('./data/runtime.json');
+    const response = await fetch('./data/r-time.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
