@@ -1,0 +1,483 @@
+[
+  {
+    "img": "./asset/images/r-time/image1.png",
+    "title": "신: 세렝게티",
+    "rating": 2.5,
+    "runningtime": 4
+  },
+  {
+    "img": "./asset/images/r-time/image2.png",
+    "title": "소녀심청",
+    "rating": 3.0,
+    "runningtime": 9
+  },
+  {
+    "img": "./asset/images/r-time/image3.png",
+    "title": "토끼굴",
+    "rating": 4.5,
+    "runningtime": 6
+  },
+  {
+    "img": "./asset/images/r-time/image4.png",
+    "title": "커피와 담배",
+    "rating": 3.0,
+    "runningtime": 6
+  },
+  {
+    "img": "./asset/images/r-time/image5.png",
+    "title": "도날드와 조카들",
+    "rating": 3.5,
+    "runningtime": 9
+  },
+  {
+    "img": "./asset/images/r-time/image6.png",
+    "title": "두들버그",
+    "rating": 3.5,
+    "runningtime": 3
+  },
+  {
+    "img": "./asset/images/r-time/image7.png",
+    "title": "열차의 도착",
+    "rating": 4.0,
+    "runningtime": 1
+  },
+  {
+    "img": "./asset/images/r-time/image8.png",
+    "title": "마블 원-샷: 팀 대릴",
+    "rating": 3.0,
+    "runningtime": 5
+  },
+  {
+    "img": "./asset/images/r-time/image9.png",
+    "title": "전선 위 참새",
+    "rating": 3.0,
+    "runningtime": 3
+  },
+  {
+    "img": "./asset/images/r-time/image10.png",
+    "title": "카타콤",
+    "rating": 2.5,
+    "runningtime": 9
+  },
+  {
+    "img": "./asset/images/r-time/image11.png",
+    "title": "건전지 엄마",
+    "rating": 4.0,
+    "runningtime": 9
+  },
+  {
+    "img": "./asset/images/r-time/image12.png",
+    "title": "더 건 파이터",
+    "rating": 3.5,
+    "runningtime": 9
+  },
+  {
+    "img": "./asset/images/r-time/image13.png",
+    "title": "독스 오브 어",
+    "rating": 3.0,
+    "runningtime": 1
+  },
+  {
+    "img": "./asset/images/r-time/image14.png",
+    "title": "판타스마고리",
+    "rating": 3.5,
+    "runningtime": 2
+  },
+  {
+    "img": "./asset/images/r-time/image15.png",
+    "title": "군견",
+    "rating": 2.0,
+    "runningtime": 10
+  },
+  {
+    "img": "./asset/images/r-time/image16.png",
+    "title": "프레쉬 과카몰리",
+    "rating": 3.5,
+    "runningtime": 2
+  },
+  {
+    "img": "./asset/images/r-time/image17.png",
+    "title": "22 vs. 지구",
+    "rating": 3.0,
+    "runningtime": 9
+  },
+  {
+    "img": "./asset/images/r-time/image18.png",
+    "title": "작은 버즈라이트이어",
+    "rating": 3.0,
+    "runningtime": 7
+  },
+  {
+    "img": "./asset/images/r-time/image19.png",
+    "title": "엠 호텔",
+    "rating": 3.5,
+    "runningtime": 7
+  },
+  {
+    "img": "./asset/images/r-time/image20.png",
+    "title": "세라비",
+    "rating": 3.0,
+    "runningtime": 8
+  },
+  {
+    "img": "./asset/images/r-time2/image1.png",
+    "title": "드래곤 길들이기:홈커밍",
+    "rating": 4.0,
+    "runningtime": 22
+  },
+  {
+    "img": "./asset/images/r-time2/image2.png",
+    "title": "미지의세계 시즌투에피원",
+    "rating": 2.5,
+    "runningtime": 28
+  },
+  {
+    "img": "./asset/images/r-time2/image3.png",
+    "title": "알사탕",
+    "rating": 3.5,
+    "runningtime": 21
+  },
+  {
+    "img": "./asset/images/r-time2/image4.png",
+    "title": "부스럭",
+    "rating": 3.5,
+    "runningtime": 26
+  },
+  {
+    "img": "./asset/images/r-time2/image5.png",
+    "title": "리얼리티+",
+    "rating": 3.5,
+    "runningtime": 21
+  },
+  {
+    "img": "./asset/images/r-time2/image6.png",
+    "title": "별의 목소리",
+    "rating": 3.0,
+    "runningtime": 25
+  },
+  {
+    "img": "./asset/images/r-time2/image7.png",
+    "title": "여름의 소리",
+    "rating": 3.0,
+    "runningtime": 11
+  },
+  {
+    "img": "./asset/images/r-time2/image8.png",
+    "title": "원스 어폰 어 스튜디오",
+    "rating": 4.0,
+    "runningtime": 12
+  },
+  {
+    "img": "./asset/images/r-time2/image9.png",
+    "title": "밤낚시",
+    "rating": 3.0,
+    "runningtime": 13
+  },
+  {
+    "img": "./asset/images/r-time2/image10.png",
+    "title": "메이와 아기고양이 버스",
+    "rating": 4.0,
+    "runningtime": 17
+  },
+  {
+    "img": "./asset/images/r-time2/image11.png",
+    "title": "나야, 문희",
+    "rating": 1.5,
+    "runningtime": 18
+  },
+  {
+    "img": "./asset/images/r-time2/image12.png",
+    "title": "슈가 글라스 보틀",
+    "rating": 3.5,
+    "runningtime": 20
+  },
+  {
+    "img": "./asset/images/r-time2/image13.png",
+    "title": "바람의 검심 : 추억편",
+    "rating": 4.0,
+    "runningtime": 30
+  },
+  {
+    "img": "./asset/images/r-time2/image14.png",
+    "title": "쿵푸팬더 : 동지축제",
+    "rating": 3.0,
+    "runningtime": 26
+  },
+  {
+    "img": "./asset/images/r-time2/image15.png",
+    "title": "쥐잡이 사내",
+    "rating": 3.0,
+    "runningtime": 17
+  },
+  {
+    "img": "./asset/images/r-time2/image16.png",
+    "title": "소년유랑",
+    "rating": 3.0,
+    "runningtime": 13
+  },
+  {
+    "img": "./asset/images/r-time2/image17.png",
+    "title": "자이고트",
+    "rating": 3.5,
+    "runningtime": 23
+  },
+  {
+    "img": "./asset/images/r-time2/image18.png",
+    "title": "아니마",
+    "rating": 3.0,
+    "runningtime": 15
+  },
+  {
+    "img": "./asset/images/r-time2/image19.png",
+    "title": "독",
+    "rating": 3.5,
+    "runningtime": 17
+  },
+  {
+    "img": "./asset/images/r-time2/image20.png",
+    "title": "스쿨 카스트",
+    "rating": 2.0,
+    "runningtime": 19
+  },
+
+  {
+    "img": "./asset/images/r-time3/image1.png",
+    "title": "룩백",
+    "rating": 3.7,
+    "runningtime": 58
+  },
+  {
+    "img": "./asset/images/r-time3/image2.png",
+    "title": "언어의 정원",
+    "rating": 2.8,
+    "runningtime": 46
+  },
+  {
+    "img": "./asset/images/r-time3/image3.png",
+    "title": "시시콜콜한 이야기",
+    "rating": 4.2,
+    "runningtime": 32
+  },
+  {
+    "img": "./asset/images/r-time3/image4.png",
+    "title": "오목소녀",
+    "rating": 3.1,
+    "runningtime": 58
+  },
+  {
+    "img": "./asset/images/r-time3/image5.png",
+    "title": "휴먼 보이스",
+    "rating": 4.0,
+    "runningtime": 30
+  },
+  {
+    "img": "./asset/images/r-time3/image6.png",
+    "title": "두개의 빛:릴루미노",
+    "rating": 2.9,
+    "runningtime": 31
+  },
+  {
+    "img": "./asset/images/r-time3/image7.png",
+    "title": "4분 44초",
+    "rating": 4.3,
+    "runningtime": 44
+  },
+  {
+    "img": "./asset/images/r-time3/image8.png",
+    "title": "낮설고 먼",
+    "rating": 2.5,
+    "runningtime": 32
+  },
+  {
+    "img": "./asset/images/r-time3/image9.png",
+    "title": "밤과 안개",
+    "rating": 3.4,
+    "runningtime": 32
+  },
+  {
+    "img": "./asset/images/r-time3/image10.png",
+    "title": "해변의 에트랑제",
+    "rating": 4.1,
+    "runningtime": 59
+  },
+  {
+    "img": "./asset/images/r-time3/image11.png",
+    "title": "세마리",
+    "rating": 2.7,
+    "runningtime": 36
+  },
+  {
+    "img": "./asset/images/r-time3/image12.png",
+    "title": "그녀를 지우는 시간",
+    "rating": 4.5,
+    "runningtime": 39
+  },
+  {
+    "img": "./asset/images/r-time3/image13.png",
+    "title": "모든 것을 잃기 전에",
+    "rating": 3.9,
+    "runningtime": 30
+  },
+  {
+    "img": "./asset/images/r-time3/image14.png",
+    "title": "실",
+    "rating": 2.2,
+    "runningtime": 30
+  },
+  {
+    "img": "./asset/images/r-time3/image15.png",
+    "title": "메모리즈",
+    "rating": 3.6,
+    "runningtime": 36
+  },
+  {
+    "img": "./asset/images/r-time3/image16.png",
+    "title": "아이들",
+    "rating": 4.4,
+    "runningtime": 31
+  },
+  {
+    "img": "./asset/images/r-time3/image17.png",
+    "title": "문을 여는 법",
+    "rating": 2.3,
+    "runningtime": 31
+  },
+  {
+    "img": "./asset/images/r-time3/image18.png",
+    "title": "언택트",
+    "rating": 4.1,
+    "runningtime": 50
+  },
+  {
+    "img": "./asset/images/r-time3/image19.png",
+    "title": "여름의 끝자락",
+    "rating": 3.3,
+    "runningtime": 39
+  },
+  {
+    "img": "./asset/images/r-time3/image20.png",
+    "title": "어린 소녀들",
+    "rating": 3.8,
+    "runningtime": 37
+  },
+  {
+    "img": "./asset/images/r-time4/image1.png",
+    "title": "문영",
+    "rating": 3.4,
+    "runningtime": 64
+  },
+  {
+    "img": "./asset/images/r-time4/image2.png",
+    "title": "내 이름은 꾸제트",
+    "rating": 2.7,
+    "runningtime": 66
+  },
+  {
+    "img": "./asset/images/r-time4/image3.png",
+    "title": "성냥공장 소녀",
+    "rating": 4.3,
+    "runningtime": 69
+  },
+  {
+    "img": "./asset/images/r-time4/image4.png",
+    "title": "북극백화점의 안내원",
+    "rating": 3.0,
+    "runningtime": 69
+  },
+  {
+    "img": "./asset/images/r-time4/image5.png",
+    "title": "그래비티",
+    "rating": 4.1,
+    "runningtime": 90
+  },
+  {
+    "img": "./asset/images/r-time4/image6.png",
+    "title": "더 테이블",
+    "rating": 2.9,
+    "runningtime": 70
+  },
+  {
+    "img": "./asset/images/r-time4/image7.png",
+    "title": "토니 타키타니",
+    "rating": 3.6,
+    "runningtime": 76
+  },
+  {
+    "img": "./asset/images/r-time4/image8.png",
+    "title": "레이니 데이 인 뉴욕",
+    "rating": 4.4,
+    "runningtime": 92
+  },
+  {
+    "img": "./asset/images/r-time4/image9.png",
+    "title": "플립",
+    "rating": 3.8,
+    "runningtime": 90
+  },
+  {
+    "img": "./asset/images/r-time4/image10.png",
+    "title": "플로우",
+    "rating": 2.4,
+    "runningtime": 83
+  },
+  {
+    "img": "./asset/images/r-time4/image11.png",
+    "title": "막걸리가 알려줄거야",
+    "rating": 3.2,
+    "runningtime": 91
+  },
+  {
+    "img": "./asset/images/r-time4/image12.png",
+    "title": "룸바",
+    "rating": 4.0,
+    "runningtime": 77
+  },
+  {
+    "img": "./asset/images/r-time4/image13.png",
+    "title": "디어스킨",
+    "rating": 3.7,
+    "runningtime": 77
+  },
+  {
+    "img": "./asset/images/r-time4/image14.png",
+    "title": "스탠 바이 미",
+    "rating": 4.2,
+    "runningtime": 87
+  },
+  {
+    "img": "./asset/images/r-time4/image15.png",
+    "title": "혼자 사는 사람들",
+    "rating": 2.6,
+    "runningtime": 91
+  },
+  {
+    "img": "./asset/images/r-time4/image16.png",
+    "title": "폴레트의 수상한 베이커리",
+    "rating": 4.3,
+    "runningtime": 87
+  },
+  {
+    "img": "./asset/images/r-time4/image17.png",
+    "title": "우리집",
+    "rating": 2.5,
+    "runningtime": 93
+  },
+  {
+    "img": "./asset/images/r-time4/image18.png",
+    "title": "풀타임",
+    "rating": 3.3,
+    "runningtime": 87
+  },
+  {
+    "img": "./asset/images/r-time4/image19.png",
+    "title": "환상의 마로나",
+    "rating": 4.1,
+    "runningtime": 92
+  },
+  {
+    "img": "./asset/images/r-time4/image20.png",
+    "title": "메기",
+    "rating": 3.5,
+    "runningtime": 88
+  }
+]

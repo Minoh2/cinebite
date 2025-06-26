@@ -1,3 +1,7 @@
+#browse {
+  margin-top: 120px;
+}
+
 #browse section {
   margin: 0 auto;
   max-width: 1600px;
@@ -105,8 +109,4 @@
 
 #brows.next {
   margin-left: 1rem;
-}
-
-#browse .rainy-movie {
-  margin-top: 9rem;
 }

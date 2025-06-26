@@ -1,34 +1,13 @@
-
-
-
-
-
-
-
-
-
+#r-time {
+  margin-top: 120px;
+}
 
 #r-time .s-title {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
-  ;
 }
 
-.body {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-medium);
-}
-
-
-
-
-
-
-
-
-
-#r-time .hero,
-#r-time .section1{
+#r-time .section1 {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 160px;
@@ -36,15 +15,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#r-time .section2{
+#r-time .section2 {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 160px;
 }
-
-
-
-
 
 #r-time .section1 .box {
   margin-bottom: 50px;
@@ -53,8 +28,6 @@
 #r-time .section1 .img-box .image {
   width: 220px;
 }
-
-
 
 #r-time .section1 .img-box {
   display: flex;
@@ -69,7 +42,6 @@
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
 }
-
 
 #r-time .section1 .img-txt .rating {
   color: var(--color-secondary);
@@ -114,7 +86,7 @@
 
 #r-time .section2 button {
   margin-top: 110px;
-    width: 170px;
+  width: 170px;
   height: 56px;
   background-color: var(--color-primary);
   font-size: var(--font-size-lg);
@@ -124,6 +96,67 @@
   margin-bottom: 170px;
 }
 
-#r-time .section2{
+#r-time .section2 {
   text-align: center;
+}
+
+.filter-container {
+  background-color: #e2e2e2;
+  border-radius: 100px;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 80rem;
+  margin: 0 auto 10rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 슬라이더와 범위 텍스트 */
+.filter-slider-area {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1 1 60%;
+  min-width: 280px;
+}
+
+.filter-slider-area span {
+  font-size: var(--font-size-sm);
+  color: var(--color-bg);
+}
+
+.filter-time-label {
+  font-weight: var(--font-weight-bold);
+  margin-left: 0.5rem;
+  text-align: center;
+  width: 90px;
+}
+
+.filter-slider-area input[type='range'] {
+  flex-grow: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  appearance: none;
+  outline: none;
+}
+
+.filter-slider-area input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter-slider-area input[type='range']::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
 }

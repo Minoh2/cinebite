@@ -1,5 +1,9 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
+#mypage {
+  margin-top: 30px;
+}
+
 #mypage section {
   max-width: 1600px;
   margin: 0 auto;
