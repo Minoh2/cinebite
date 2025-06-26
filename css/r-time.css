@@ -12,8 +12,9 @@
   margin: 0 auto;
   padding: 0 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 1.6rem;
 }
 #r-time .section2 {
   max-width: 1600px;
@@ -22,11 +23,11 @@
 }
 
 #r-time .section1 .box {
-  margin-bottom: 50px;
+  margin-bottom: 36px;
 }
 
 #r-time .section1 .img-box .image {
-  width: 220px;
+  width: 21rem;
 }
 
 #r-time .section1 .img-box {
@@ -39,24 +40,22 @@
 #r-time .section1 .img-txt p {
   text-align: center;
   margin-top: 20px;
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
 }
 
 #r-time .section1 .img-txt .rating {
   color: var(--color-secondary);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
   display: flex;
   align-items: center;
-  gap: 4px;
 }
 
 #r-time .section1 .img-txt .sub-txt {
   display: flex;
   gap: 10px;
   margin-top: 5px;
-
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
   justify-content: center;
   align-items: center;
   /* 수직 중앙 정렬 */
@@ -85,15 +84,16 @@
 }
 
 #r-time .section2 button {
-  margin-top: 110px;
-  width: 170px;
-  height: 56px;
+  margin: 90px;
+
   background-color: var(--color-primary);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  border-radius: 50px;
   color: var(--color-bg);
-  margin-bottom: 170px;
+  padding: 12px 32px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
 }
 
 #r-time .section2 {
@@ -142,6 +142,7 @@
   background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   appearance: none;
   outline: none;
+  cursor: pointer;
 }
 
 .filter-slider-area input[type='range']::-webkit-slider-thumb {
@@ -159,4 +160,46 @@
   background-color: #333;
   border-radius: 50%;
   cursor: pointer;
+}
+
+#r-time .section1 .img-txt .sub-txt .rating img {
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+}
+
+#r-time .section-subtitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#r-time .section-title {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: 5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+#r-time .duration {
+  font-weight: var(--font-weight-bold);
+  margin-left: 0.5rem;
+  text-align: center;
+  flex-shrink: 0;
+  width: 65px;
+}
+
+#r-time .filter-slider-area .small {
+  font-size: 1rem;
+}
+
+#r-time .message {
+  text-align: center;
+  width: 100%;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
 }
