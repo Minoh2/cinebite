@@ -1,15 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
-
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.about-hero',
-    start: 'top top',
-    end: '+=150%',
-    scrub: false, //true: 스크롤 시 이벤트 발생
-    pin: true,
-    markers: true,
-  },
-});
+const tl = gsap.timeline();
 
 tl.to('.about-hero__projector-beam', { opacity: 1, duration: 0.5 })
   .to('.about-hero__heading', { opacity: 1, y: 0, duration: 0.5 })

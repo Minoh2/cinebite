@@ -120,10 +120,20 @@
 }
 
 .about-service__img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
+  gap: 32px;
+
   img {
     width: 100%;
   }
+}
+
+.about-service__img-box .about-service-logo {
+  width: auto;
+  height: 8rem;
 }
 
 .about-service__item-desc {
