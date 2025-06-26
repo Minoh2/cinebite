@@ -10,7 +10,7 @@
 #r-time .section1 {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 160px;
+  padding: 0 120px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
 #r-time .section2 {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 160px;
+  padding: 0 120px;
 }
 
 #r-time .section1 .box {

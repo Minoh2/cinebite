@@ -1,7 +1,7 @@
 #home section:not(:first-child) {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 90px 160px 90px;
+  padding: 90px 120px 90px;
 }
 
 /* ✅ 인사이드 아웃 전체 섹션 */
@@ -565,10 +565,9 @@
   margin-top: 1.2rem;
   font-size: var(--font-size-md);
   color: var(--color-text);
-  opacity: 0.7;
   border: 1px solid var(--color-gray-300);
   display: inline-block;
-  padding: 8px 24px;
+  padding: 0.6rem 1.2rem;
   border-radius: 100px;
 }
 
@@ -728,10 +727,11 @@
 }
 
 .situation-row img {
-  width: 18.125rem; /* 동일하게 */
-  height: 27.1875rem; /* 동일하게 */
+  width: 20rem; /* 동일하게 */
+  aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 1rem;
+  flex: 1;
 }
 
 .situation-more {

@@ -19,7 +19,7 @@
 .nav-wrapper {
   height: 100%;
   max-width: 100%;
-  margin: 0 16rem; /* ✅ 콘텐츠만 가운데로 */
+  margin: 0 12rem; /* ✅ 콘텐츠만 가운데로 */
   display: flex;
   justify-content: space-between;
   align-items: center;
