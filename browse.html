@@ -539,50 +539,35 @@
         </div>
       </section>
     </main>
-    <script>
-      document.querySelectorAll('.slide-btn').forEach((button) => {
-        button.addEventListener('click', () => {
-          const track = button.closest('.movie-slider').querySelector('.movie-track');
-          const card = track.querySelector('.movie-card');
-          const cardWidth = card.offsetWidth + 75; // 카드 간 간격 포함
-          const isPrev = button.classList.contains('prev');
-          const direction = isPrev ? -1 : 1;
+    <footer class="footer">
+      <div class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#">회사소개</a></li>
+          <li class="footer__nav-item"><a href="#">서비스 소개</a></li>
+          <li class="footer__nav-item"><a href="#">이용약관</a></li>
+          <li class="footer__nav-item"><a href="#">개인정보 처리방침</a></li>
+          <li class="footer__nav-item"><a href="#">고객센터</a></li>
+          <li class="footer__nav-item"><a href="#">이벤트</a></li>
+        </ul>
+      </div>
 
-          track.scrollBy({
-            left: cardWidth * direction,
-            behavior: 'smooth',
-          });
-        });
-      });
-    </script>
+      <div class="footer__info">
+        <p class="footer__slogan">A Curation Platform for Short Films</p>
+        <div class="footer__credit-section">
+          <p class="footer__credit">Directed by CINEBITE Team</p>
+          <p class="footer__credit">Developed by Gayeon Park, Minho Lee, Jiwon Moon</p>
+          <p class="footer__credit">Designed by Yurim Lee, Subin Kim</p>
+        </div>
+        <p class="footer__credit">Produced in 2025</p>
+        <div class="footer__credit-section">
+          <p class="footer__credit">CINEBITE Team – Minho Lee, Yurim Lee, Subin Kim, Jiwon Moon, Gayeon Park</p>
+        </div>
+        <div class="footer__credit-section">
+          <p class="footer__copyright">ⓒ 2025 CINEBITE. All rights reserved</p>
+          <p class="footer__notice">본 사이트는 비상업적 목적의 개인 프로젝트로 제작되었습니다.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/browse.js"></script>
   </body>
-  <footer class="footer">
-    <div class="footer__nav">
-      <ul class="footer__nav-list">
-        <li class="footer__nav-item"><a href="#">회사소개</a></li>
-        <li class="footer__nav-item"><a href="#">서비스 소개</a></li>
-        <li class="footer__nav-item"><a href="#">이용약관</a></li>
-        <li class="footer__nav-item"><a href="#">개인정보 처리방침</a></li>
-        <li class="footer__nav-item"><a href="#">고객센터</a></li>
-        <li class="footer__nav-item"><a href="#">이벤트</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__info">
-      <p class="footer__slogan">A Curation Platform for Short Films</p>
-      <div class="footer__credit-section">
-        <p class="footer__credit">Directed by CINEBITE Team</p>
-        <p class="footer__credit">Developed by Gayeon Park, Minho Lee, Jiwon Moon</p>
-        <p class="footer__credit">Designed by Yurim Lee, Subin Kim</p>
-      </div>
-      <p class="footer__credit">Produced in 2025</p>
-      <div class="footer__credit-section">
-        <p class="footer__credit">CINEBITE Team – Minho Lee, Yurim Lee, Subin Kim, Jiwon Moon, Gayeon Park</p>
-      </div>
-      <div class="footer__credit-section">
-        <p class="footer__copyright">ⓒ 2025 CINEBITE. All rights reserved</p>
-        <p class="footer__notice">본 사이트는 비상업적 목적의 개인 프로젝트로 제작되었습니다.</p>
-      </div>
-    </div>
-  </footer>
 </html>
