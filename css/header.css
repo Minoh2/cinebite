@@ -161,3 +161,9 @@
 .nav-links li.nav-active a {
   color: var(--color-primary);
 }
+
+@media (max-width: 1299px) {
+  .search-box {
+    display: none;
+  }
+}

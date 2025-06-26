@@ -1,11 +1,10 @@
+#r-time {
+  margin-top: 120px;
+}
+
 #r-time .s-title {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
-}
-
-.body {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-medium);
 }
 
 #r-time .section1 {
