@@ -7,7 +7,7 @@ let allMovies = [];
 function displayMovies(movies) {
   movieContainer.innerHTML = '';
   if (movies.length === 0) {
-    movieContainer.innerHTML = '<p style="text-align: center; width: 100%;">슬라이더를 움직여 원하는 시간대의 영화를 찾아보세요!</p>';
+    movieContainer.innerHTML = '<p class="message">슬라이더를 움직여 원하는 시간대의 영화를 찾아보세요!</p>';
     return;
   }
 
