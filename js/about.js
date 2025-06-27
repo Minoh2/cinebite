@@ -95,22 +95,18 @@ setInterval(changePoster, 3000);
 
 document.addEventListener('DOMContentLoaded', () => {
   const calendarData = [
-    { day: 'Wednesday', date: 11, tasks: ['프로젝트 시작'] },
     { day: 'Thursday', date: 12, tasks: ['데스크 리서치'] },
-    { day: 'Friday', date: 13, tasks: [] },
-    { day: 'Saturday', date: 14, tasks: ['유저 리서치 및 와이어 프레임'] },
-    { day: 'Sunday', date: 15, tasks: [] },
-    { day: 'Monday', date: 16, tasks: ['프로젝트 시작'] },
-    { day: 'Tuesday', date: 17, tasks: ['프로젝트 시작'] },
-    { day: 'Wednesday', date: 18, tasks: ['프로젝트 시작'] },
-    { day: 'Thursday', date: 19, tasks: ['프로젝트 시작'] },
-    { day: 'Friday', date: 20, tasks: ['프로젝트 시작'] },
-    { day: 'Saturday', date: 21, tasks: ['프로젝트 시작'] },
-    { day: 'Sunday', date: 22, tasks: ['프로젝트 시작'] },
-    { day: 'Monday', date: 23, tasks: ['프로젝트 시작'] },
-    { day: 'Tuesday', date: 24, tasks: ['프로젝트 시작'] },
-    { day: 'Wednesday', date: 25, tasks: ['프로젝트 시작'] },
-    { day: 'Thursday', date: 26, tasks: ['프로젝트 시작'] },
+    { day: 'Friday', date: 13, tasks: ['유저리서치'] },
+    { day: 'Monday', date: 16, tasks: ['와이어프레임[홈화면]'] },
+    { day: 'Tuesday', date: 17, tasks: ['와이어프레임[상세페이지]'] },
+    { day: 'Wednesday', date: 18, tasks: ['와이어프레임[소개페이지]'] },
+    { day: 'Thursday', date: 19, tasks: ['와이어프레임[소개페이지]'] },
+    { day: 'Friday', date: 20, tasks: ['홈 디자인 완성'] },
+    { day: 'Monday', date: 23, tasks: ['홈, 소개, 상세페이지 코딩'] },
+    { day: 'Tuesday', date: 24, tasks: ['홈, 소개, 상세페이지 코딩'] },
+    { day: 'Wednesday', date: 25, tasks: ['둘러보기,러닝타임,보관함 코딩'] },
+    { day: 'Thursday', date: 26, tasks: ['디테일 수정'] },
+    { day: 'Friday', date: 27, tasks: ['PPT 작성 및 프로젝트 종료'] },
   ];
 
   const calendarContainer = document.querySelector('#about-calendar');
