@@ -199,7 +199,6 @@ body {
 
 #detail .section2 .box-c {
   display: flex;
-  gap: 50px;
   justify-content: space-between;
 }
 
