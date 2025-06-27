@@ -8,38 +8,56 @@ tl.to('.about-hero__projector-beam', { opacity: 1, duration: 0.5 })
 const posters = [
   {
     img: './asset/images/about/example_poster1.png',
-    text: '90분',
+    time: '90분',
+    desc: '감정에 푹 빠지는 감성 영화',
   },
   {
     img: './asset/images/about/example_poster2.png',
-    text: '60분',
+    time: '60분',
+    desc: '딱 점심시간에 보기 좋은 영화',
   },
   {
     img: './asset/images/about/example_poster3.png',
-    text: '30분',
+    time: '30분',
+    desc: '짧고 강렬한 독립영화',
   },
 ];
 
 let index = 0;
 const posterImg = document.querySelector('.about-intro__img-box img');
 const posterText = document.querySelector('.about-intro__duration span');
+const posterDesc = document.querySelector('.about-intro__description');
 
 function changePoster() {
   posterImg.style.opacity = 0;
-  posterImg.style.transform = 'translateY(-50px)';
   posterText.style.opacity = 0;
+  posterDesc.style.opacity = 0;
+
+  posterImg.style.transform = 'translateY(-50px)';
   posterText.style.transform = 'translateY(-50px)';
+  posterDesc.style.transform = 'translateY(-50px)';
 
   setTimeout(() => {
-    index = (index + 1) % posters.length;
-    posterImg.src = posters[index].img;
-    posterText.textContent = posters[index].text;
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * posters.length);
+    } while (randomIndex === index); // 이전 index랑 같으면 다시 뽑음
+
+    index = randomIndex;
+    const current = posters[index];
+
+    posterImg.src = current.img;
+    posterText.textContent = current.time;
+    posterDesc.textContent = current.desc;
 
     posterImg.style.opacity = 1;
-    posterImg.style.transform = 'translateY(50px)';
     posterText.style.opacity = 1;
+    posterDesc.style.opacity = 1;
+
+    posterImg.style.transform = 'translateY(50px)';
     posterText.style.transform = 'translateY(50px)';
-  }, 500); // 0.5초 후에 내용 변경
+    posterDesc.style.transform = 'translateY(50px)';
+  }, 500);
 }
 
 setInterval(changePoster, 3000);
