@@ -66,6 +66,8 @@ const movieData = {
   ],
 };
 
+const detailLinks = ['detail1.html', 'detail2.html', 'detail3.html', 'detail4.html', 'detail5.html'];
+
 // 슬라이더 값 → 키 추출 함수
 function getTimeRangeKey(value) {
   if (value <= 10) return '0-10';
@@ -89,10 +91,30 @@ function updateMovieCards(value) {
 
   // 카드 영역 초기화
   cardList.innerHTML = '';
-  posters.forEach((src) => {
+
+  posters.forEach((src, index) => {
     const card = document.createElement('div');
     card.className = 'movie-card';
-    card.innerHTML = `<img src="${src}" alt="영화 포스터">`;
+
+    if (rangeKey === '61-100') {
+      const link = document.createElement('a');
+      link.href = detailLinks[index]; // detail1.html ~ detail5.html
+      link.target = '_blank';
+
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = '영화 포스터';
+
+      link.appendChild(img);
+      card.appendChild(link);
+    } else {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = '영화 포스터';
+
+      card.appendChild(img);
+    }
+
     cardList.appendChild(card);
   });
 }
