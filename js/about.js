@@ -7,19 +7,49 @@ tl.to('.about-hero__projector-beam', { opacity: 1, duration: 0.5 })
 
 const posters = [
   {
-    img: './asset/images/about/example_poster1.png',
-    time: '90분',
-    desc: '감정에 푹 빠지는 감성 영화',
+    img: './asset/images/about/posters/image1.png',
+    time: '10분',
+    desc: '오스카 수상 단편 영화',
   },
   {
-    img: './asset/images/about/example_poster2.png',
-    time: '60분',
-    desc: '딱 점심시간에 보기 좋은 영화',
+    img: './asset/images/about/posters/image2.png',
+    time: '20분',
+    desc: '유튜브에서 볼 수 있는 영화',
   },
   {
-    img: './asset/images/about/example_poster3.png',
+    img: './asset/images/about/posters/image3.png',
     time: '30분',
-    desc: '짧고 강렬한 독립영화',
+    desc: '밥 먹으면서 보기 좋은 영화',
+  },
+  {
+    img: './asset/images/about/posters/image4.png',
+    time: '40분',
+    desc: '혼자 조용히 보고 싶은 영화',
+  },
+  {
+    img: './asset/images/about/posters/image5.png',
+    time: '50분',
+    desc: '숨겨진 보석 같은 영화',
+  },
+  {
+    img: './asset/images/about/posters/image6.png',
+    time: '60분',
+    desc: '대사 한 줄로 기억에 남는 영화',
+  },
+  {
+    img: './asset/images/about/posters/image7.png',
+    time: '70분',
+    desc: '친구랑 같이 보면 웃긴 영화',
+  },
+  {
+    img: './asset/images/about/posters/image8.png',
+    time: '80분',
+    desc: '시간 가는 줄 모르게 빠져드는 영화',
+  },
+  {
+    img: './asset/images/about/posters/image9.png',
+    time: '90분',
+    desc: '단단한 서사 구조의 드라마',
   },
 ];
 
@@ -54,12 +84,13 @@ function changePoster() {
     posterText.style.opacity = 1;
     posterDesc.style.opacity = 1;
 
-    posterImg.style.transform = 'translateY(50px)';
-    posterText.style.transform = 'translateY(50px)';
-    posterDesc.style.transform = 'translateY(50px)';
+    posterImg.style.transform = 'translateY(0)';
+    posterText.style.transform = 'translateY(0)';
+    posterDesc.style.transform = 'translateY(0)';
   }, 500);
 }
 
+changePoster();
 setInterval(changePoster, 3000);
 
 document.addEventListener('DOMContentLoaded', () => {
