@@ -1,7 +1,7 @@
 #home section:not(:first-child) {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 90px 120px 90px;
+  padding: 90px 120px;
 }
 
 /* ✅ 인사이드 아웃 전체 섹션 */
