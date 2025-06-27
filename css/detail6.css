@@ -483,3 +483,7 @@ body {
 #detail6 .section6 .movie-box2 {
   margin-top: 40px;
 }
+
+.platform > * {
+  margin-right: 7px;
+}
