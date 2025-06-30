@@ -487,3 +487,7 @@ body {
 .platform > * {
   margin-right: 7px;
 }
+
+#detail6 img {
+  object-fit: cover;
+}
