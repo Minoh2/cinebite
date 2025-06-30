@@ -97,16 +97,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const calendarData = [
     { day: 'Thursday', date: 12, tasks: ['데스크 리서치'] },
     { day: 'Friday', date: 13, tasks: ['유저리서치'] },
-    { day: 'Monday', date: 16, tasks: ['와이어프레임[홈화면]'] },
-    { day: 'Tuesday', date: 17, tasks: ['와이어프레임[상세페이지]'] },
-    { day: 'Wednesday', date: 18, tasks: ['와이어프레임[소개페이지]'] },
-    { day: 'Thursday', date: 19, tasks: ['와이어프레임[소개페이지]'] },
-    { day: 'Friday', date: 20, tasks: ['홈 디자인 완성'] },
-    { day: 'Monday', date: 23, tasks: ['홈, 소개, 상세페이지 코딩'] },
-    { day: 'Tuesday', date: 24, tasks: ['홈, 소개, 상세페이지 코딩'] },
-    { day: 'Wednesday', date: 25, tasks: ['둘러보기,러닝타임,보관함 코딩'] },
-    { day: 'Thursday', date: 26, tasks: ['디테일 수정'] },
-    { day: 'Friday', date: 27, tasks: ['PPT 작성 및 프로젝트 종료'] },
+    { day: 'Saturday', date: 14, tasks: [] },
+    { day: 'Sunday', date: 15, tasks: ['홈화면 와이어프레임 제작'], class: 'center' },
+    { day: 'Monday', date: 16, tasks: [] },
+    { day: 'Tuesday', date: 17, tasks: ['소개, 상세 페이지 와이어프레임 제작'], class: 'left' },
+    { day: 'Wednesday', date: 18, tasks: [] },
+    { day: 'Thursday', date: 19, tasks: ['디자인 디테일'] },
+    { day: 'Friday', date: 20, tasks: ['디자인 완성'] },
+    { day: 'Saturday', date: 21, tasks: ['홈, 소개, 상세페이지 코딩'], class: 'left' },
+    { day: 'Sunday', date: 22, tasks: [] },
+    { day: 'Monday', date: 23, tasks: ['둘러보기, 러닝타임, 보관함페이지 코딩'], class: 'left' },
+    { day: 'Tuesday', date: 24, tasks: [] },
+    { day: 'Wednesday', date: 25, tasks: ['PPT 작성 및 코드 디테일 정리'], class: 'left' },
+    { day: 'Thursday', date: 26, tasks: [] },
+    { day: 'Friday', date: 27, tasks: ['프로젝트 종료'] },
   ];
 
   const calendarContainer = document.querySelector('#about-calendar');
@@ -115,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dayCell = document.createElement('div');
     dayCell.classList.add('day-cell');
 
-    const tasksHtml = dayData.tasks.map((task) => `<div class="task">${task}</div>`).join('');
+    const tasksHtml = dayData.tasks.map((task) => `<div class="task ${dayData.class}">${task}</div>`).join('');
 
     const dayNameHtml = dayData.day ? dayData.day : '';
 
