@@ -189,6 +189,24 @@
   content: '';
 }
 
+#about-calendar .tasks {
+  position: relative;
+}
+
+#about-calendar .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 482px;
+}
+
+#about-calendar .left {
+  width: 316px;
+}
+
+/* timeline end */
+
 .about-review__subtitle {
   padding-bottom: 40px;
   font-size: var(--font-size-lg);
@@ -281,7 +299,7 @@
 /* timeline end */
 
 #about .about-credit {
-  padding-bottom: 120px;
+  padding-bottom: 90px;
 }
 
 #about .about-credit__title {
