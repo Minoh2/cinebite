@@ -5,14 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="./asset/images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/detail6.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
+<header class="blur">
+      <nav class="nav-bar">
+        <div class="nav-wrapper">
+          <!-- 좌측: 로고 + 메뉴 -->
+          <div class="nav-left">
+            <div class="logo">
+              <a href="index.html"><img src="asset/images/logo-primary.svg" alt="logo" /><span class="logo-text">cinebite</span></a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="index.html">홈</a></li>
+              <li><a href="about.html">소개</a></li>
+              <li><a href="r-time.html">러닝타임</a></li>
+              <li><a href="browse.html">둘러보기</a></li>
+              <li><a href="mypage.html">보관함</a></li>
+            </ul>
+          </div>
 
+          <!-- 우측: 검색창 + 알림 + 프로필 + 닉네임 -->
+          <div class="nav-icons">
+            <div class="search-box">
+              <form action="/search" method="GET" class="search-wrapper">
+                <span class="search-icon"><img src="asset/images/home_image/icon_search.png" alt="" /></span>
+                <input type="text" name="q" id="searchInput" required />
+                <span class="search-hint">찾고 싶은 영화를 검색해보세요</span>
+                <button type="submit" hidden></button>
+              </form>
+            </div>
+
+            <button class="notification-btn" aria-label="알림"><img src="asset/images/home_image/icon_bell.png" alt="" /></button>
+
+         <div class="profile">
+              <a href="mypage.html" class="profile-link">
+                <div class="profile__img-box">
+                  <img src="asset/images/home_image/bite123.png" alt="프로필 이미지" />
+                </div>
+                <span class="nickname">바이트123</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main id="detail6">
         <div class="hero">
@@ -333,7 +376,35 @@
         </section>
     </main>
 
+<footer class="footer">
+      <div class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#">회사소개</a></li>
+          <li class="footer__nav-item"><a href="#">서비스 소개</a></li>
+          <li class="footer__nav-item"><a href="#">이용약관</a></li>
+          <li class="footer__nav-item"><a href="#">개인정보 처리방침</a></li>
+          <li class="footer__nav-item"><a href="#">고객센터</a></li>
+          <li class="footer__nav-item"><a href="#">이벤트</a></li>
+        </ul>
+      </div>
 
+      <div class="footer__info">
+        <p class="footer__slogan">A Curation Platform for Short Films</p>
+        <div class="footer__credit-section">
+          <p class="footer__credit">Directed by CINEBITE Team</p>
+          <p class="footer__credit">Developed by Gayeon Park, Minho Lee, Jiwon Moon</p>
+          <p class="footer__credit">Designed by Yurim Lee, Subin Kim</p>
+        </div>
+        <p class="footer__credit">Produced in 2025</p>
+        <div class="footer__credit-section">
+          <p class="footer__credit">CINEBITE Team – Minho Lee, Yurim Lee, Subin Kim, Jiwon Moon, Gayeon Park</p>
+        </div>
+        <div class="footer__credit-section">
+          <p class="footer__copyright">ⓒ 2025 CINEBITE. All rights reserved</p>
+          <p class="footer__notice">본 사이트는 비상업적 목적의 개인 프로젝트로 제작되었습니다.</p>
+        </div>
+      </div>
+    </footer>
 
 
 
