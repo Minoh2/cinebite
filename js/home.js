@@ -1,23 +1,71 @@
 const banners = document.querySelectorAll('.banner');
-
 let current = 0;
 
 function showBanner(index) {
   const banner = banners[index];
-  const text = banner.querySelector('.text-img');
+  const textImg = banner.querySelector('.text-img img');
   const character = banner.querySelector('.character-img');
+  const heroSub = banner.querySelector('.hero-sub__box');
+  const isShiftLeft = textImg.classList.contains('shift-left');
 
-  gsap.set(banner, { opacity: 0, pointerEvents: 'auto' });
+  banners.forEach((b) => {
+    const img = b.querySelector('.text-img img');
+    const char = b.querySelector('.character-img');
+    const sub = b.querySelector('.hero-sub__box');
+    gsap.set(b, { opacity: 0, pointerEvents: 'none' });
+    gsap.set(img, {
+      x: img.classList.contains('shift-left') ? -100 : -150,
+      opacity: 0,
+    });
+    gsap.set(char, { x: 100, opacity: 0 });
+    if (sub) gsap.set(sub, { opacity: 0 });
+  });
+
+  gsap.set(banner, { pointerEvents: 'auto' });
   gsap.to(banner, { opacity: 1, duration: 1 });
 
-  gsap.to(text, { x: 0, opacity: 1, delay: 1, duration: 1, ease: 'power2.out' });
+  gsap.to(textImg, {
+    x: isShiftLeft ? -50 : 0,
+    opacity: 1,
+    delay: 1,
+    duration: 1,
+    ease: 'power2.out',
+  });
 
-  gsap.to(character, { x: 0, opacity: 1, delay: 2, duration: 1, ease: 'power2.out' });
+  gsap.to(heroSub, {
+    opacity: 1,
+    delay: 2.1,
+    duration: 0.8,
+    ease: 'power1.out',
+  });
+
+  gsap.to(character, {
+    x: 0,
+    opacity: 1,
+    delay: 2,
+    duration: 1,
+    ease: 'power2.out',
+  });
 
   gsap.delayedCall(5, () => {
     gsap.to(banner, { opacity: 0, duration: 1 });
-    gsap.to(text, { x: -200, opacity: 0, duration: 1 });
-    gsap.to(character, { x: 200, opacity: 0, duration: 1 });
+
+    gsap.to(textImg, {
+      x: -200,
+      opacity: 0,
+      duration: 1,
+    });
+
+    gsap.to(heroSub, {
+      opacity: 0,
+      duration: 1,
+    });
+
+    gsap.to(character, {
+      x: 200,
+      opacity: 0,
+      duration: 1,
+    });
 
     gsap.delayedCall(1.2, () => {
       current = (index + 1) % banners.length;

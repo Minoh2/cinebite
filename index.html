@@ -54,7 +54,10 @@
               </form>
             </div>
 
-            <button class="notification-btn" aria-label="알림"><img src="asset/images/home_image/icon_bell.png" alt="" /></button>
+            <div class="notif-wrapper">
+              <button class="notification-btn" aria-label="알림"><img src="asset/images/home_image/icon_bell.png" alt="" /></button>
+              <div class="notification-msg">새로운 알림이 없어요.</div>
+            </div>
 
             <div class="profile">
               <a href="mypage.html" class="profile-link">
@@ -76,14 +79,16 @@
         <div class="banner" id="banner1">
           <div class="text-img">
             <img src="asset/images/home_image/hero/insideout_title.png" alt="인사이드 아웃 로고 텍스트" />
-            <div class="hero-sub">
-              <div class="hero-meta">
-                <img src="asset/images/home_image/img_all.png" alt="" />
-                <img src="asset/images/home_image/img_cc.png" class="cc" alt="" />
+            <div class="hero-sub__box">
+              <div class="hero-sub">
+                <div class="hero-meta">
+                  <img src="asset/images/home_image/img_all.png" alt="" />
+                  <img src="asset/images/home_image/img_cc.png" class="cc" alt="" />
+                </div>
+                <a class="times">2024 96분</a>
               </div>
-              <a class="times">2024 96분</a>
+              <a class="cta-detail" href="#">자세히 보러가기</a>
             </div>
-            <a class="cta-detail" href="detail7.html">자세히 보러가기</a>
           </div>
           <div class="character-img horizontal">
             <img src="asset/images/home_image/hero/insideout_character.png" alt="인사이드 아웃 인물" />
@@ -91,15 +96,17 @@
         </div>
         <div class="banner" id="banner2">
           <div class="text-img">
-            <img src="asset/images/home_image/hero/night-fishing_title.png" alt="밤낚시 로고 텍스트" />
-            <div class="hero-sub">
-              <div class="hero-meta">
-                <img src="asset/images/home_image/img_all.png" alt="" />
-                <img src="asset/images/home_image/img_cc.png" class="cc" alt="" />
+            <img class="shift-left" src="asset/images/home_image/hero/night-fishing_title.png" alt="밤낚시 로고 텍스트" />
+            <div class="hero-sub__box">
+              <div class="hero-sub">
+                <div class="hero-meta">
+                  <img src="asset/images/home_image/img_all.png" alt="" />
+                  <img src="asset/images/home_image/img_cc.png" class="cc" alt="" />
+                </div>
+                <a class="times">2024 13분</a>
               </div>
-              <a class="times">2024 13분</a>
+              <a class="cta-detail" href="detail6.html">자세히 보러가기</a>
             </div>
-            <a class="cta-detail" href="detail6.html">자세히 보러가기</a>
           </div>
           <div class="character-img vertical">
             <img src="asset/images/home_image/hero/night-fishing_character.png" alt="밤낚시 인물" />
@@ -216,7 +223,7 @@
             </p>
           </div>
           <!-- 우측 카드 슬라이드 영역 -->
-          <div class="indie30-card-list">
+          <div class="indie30-card-list dragscroll">
             <div class="indie30-card">
               <img src="asset/images/home_image/30m1.png" alt="개들의 침묵 포스터" />
               <div class="indie30-card-text">
@@ -256,7 +263,7 @@
             <h2>거장의 시작을 담은 <span class="highlight">데뷔작 모음</span></h2>
           </div>
           <!-- 스와이프 카드 리스트 -->
-          <div class="debut-card-list">
+          <div class="debut-card-list dragscroll">
             <div class="debut-card">
               <img src="asset/images/home_image/start1.png" alt="두들버그 포스터" />
               <div class="debut-text">
@@ -268,16 +275,14 @@
               <img src="asset/images/home_image/start2.png" alt="편지 포스터" />
               <div class="debut-text">
                 <p class="card-title">편지 | 14분</p>
-                <p class="debut-desc">어린 시절 사랑에 대한 미셸 공드리의 고찰, 그의 트레이드 마크인 초현실주의로 가득하다</p>
+                <p class="debut-desc">어린 시절 사랑에 대한 미셸 공드리의 고찰, 그의 트레이드 마크인 초현실주의로 가득하다.</p>
               </div>
             </div>
             <div class="debut-card">
               <img src="asset/images/home_image/start3.png" alt="지각회견 포스터" />
               <div class="debut-text">
                 <p class="card-title">지리멸렬 | 31분</p>
-                <p class="debut-desc">
-                  봉준호의 초기 걸작, 네 개의 단편이 유기적으로 연결되어 한국 일상의 생생하고 날것 같은 단면을 담아낸 옴니버스 영화.
-                </p>
+                <p class="debut-desc">봉준호의 초기 걸작, 네 개의 단편이 유기적으로 연결되어 한국 일상의 날것 같은 단면을 담아낸 옴니버스 영화.</p>
               </div>
             </div>
             <div class="debut-card">
@@ -429,5 +434,7 @@
       </div>
     </footer>
     <script src="./js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dragscroll@0.0.8/dragscroll.min.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>

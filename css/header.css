@@ -6,8 +6,8 @@
 
   width: 100vw; /* ✅ 전체 화면 너비 강제 적용 */
   height: 8rem;
-  background-color: var(--color-bg);
   color: var(--color-text);
+  background-color: var(--color-bg);
 }
 .blur .nav-bar {
   background: linear-gradient(to bottom, rgba(33, 33, 33, 0.9) 0%, rgba(33, 33, 33, 0.6) 50%, rgba(33, 33, 33, 0) 100%);
@@ -18,12 +18,12 @@
 }
 
 .nav-wrapper {
-  height: 100%;
-  max-width: 100%;
-  margin: 0 12rem; /* ✅ 콘텐츠만 가운데로 */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 12rem; /* ✅ 콘텐츠만 가운데로 */
 }
 
 /* 좌측: 로고 + 메뉴 */
@@ -34,8 +34,8 @@
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 3.2rem; /* 메뉴 항목 간 간격 32px */
 }
 
@@ -44,10 +44,10 @@
 }
 
 .nav-links li a {
-  color: var(--color-text);
-  text-decoration: none;
   font-size: var(--font-size-md);
+  color: var(--color-text);
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .nav-links li a:hover {
@@ -69,32 +69,36 @@
 
 .search-wrapper input {
   width: 100%;
-  padding: 1rem 3.6rem 1rem 5rem;
-  font-size: var(--font-size-sm);
+  padding: 1rem 3.6rem 1rem 4.5rem;
   border: none;
   border-radius: 100px;
-  background-color: rgba(227, 227, 227, 0.2); /* ✅ 배경 제거 */
+  font-size: var(--font-size-sm);
   color: var(--color-text);
-  outline: none;
+  background-color: rgba(227, 227, 227, 0.2); /* ✅ 배경 제거 */
   transition: border-color 0.3s ease;
+  outline: none;
 }
 
 .search-icon {
   position: absolute;
-  left: 1.2rem;
   top: 50%;
-  transform: translateY(-50%);
+  left: 1.2rem;
   color: var(--color-gray-300);
+  transform: translateY(-50%);
   pointer-events: none;
+
+  img {
+    width: 70%;
+  }
 }
 
 .search-hint {
   position: absolute;
-  right: 1.2rem;
   top: 50%;
-  transform: translateY(-50%);
-  color: var(--color-gray-300);
+  right: 1.2rem;
   font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  transform: translateY(-50%);
   pointer-events: none;
   white-space: nowrap;
 }
@@ -110,10 +114,10 @@
 
 /* 아이콘 버튼 공통 (🔔) */
 .nav-icons button {
-  background: none;
   border: none;
-  color: var(--color-text);
   font-size: var(--font-size-lg);
+  color: var(--color-text);
+  background: none;
   cursor: pointer;
 }
 
@@ -134,18 +138,18 @@
 
 /* 닉네임 */
 .nickname {
+  flex-shrink: 0;
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-medium);
   color: var(--color-text);
-  flex-shrink: 0;
 }
 
 .logo a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   flex-shrink: 0;
+  gap: 16px;
 }
 
 .logo img {
@@ -155,9 +159,9 @@
 
 .logo-text {
   font-family: var(--font-family-logo);
-  color: var(--color-primary);
   font-size: 24px;
   font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
 }
 
 .nav-links li.nav-active a {
@@ -168,4 +172,41 @@
   .search-box {
     display: none;
   }
+}
+
+.notif-wrapper {
+  position: relative;
+}
+
+.notification-msg {
+  display: none;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  width: 240px;
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--color-text);
+  background-color: #404040;
+  transform: translateX(-50%);
+  filter: brightness(80%);
+}
+
+.notification-msg::before {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #404040;
+  border-left: 8px solid transparent;
+  transform: translateX(-50%);
+  content: '';
+}
+
+.notification-msg.active {
+  display: block;
 }
