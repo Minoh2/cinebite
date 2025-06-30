@@ -640,10 +640,6 @@
 /* 이하 계단식 카드 배치는 이전과 동일 */
 
 /* 🔻 상황별 추천 */
-#home section.situation-section {
-  padding-bottom: 180px;
-}
-
 .situation-header {
   display: flex;
   flex-direction: column;
